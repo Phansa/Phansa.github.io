@@ -5,7 +5,7 @@ function slideShow() {
   /* GLOBALS **********************************************************************************************/
   
   var globals = {
-    slideDelay: 4000, // The time interval between consecutive slides.
+    slideDelay: 4400, // The time interval between consecutive slides.
     fadeDelay: 35, // The time interval between individual opacity changes. This should always be much smaller than slideDelay.  
     wrapperID: "slideShowImages", // The ID of the <div> element that contains all of the <img> elements to be shown as a slide show.
     buttonID: "slideShowButton", // The ID of the <button> element that toggles the slide show on and off.
