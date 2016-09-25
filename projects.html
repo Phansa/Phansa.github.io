@@ -335,14 +335,46 @@
 		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/youngster.png>
 	</a>
 	<h1> Riot Games API Project </h1>
-	<p> I had created an excel spreadsheet of all the League of Legends skins I owned and
+	<p> I had created an Excel spreadsheet of all the League of Legends skins I owned and
 	wanted a way to visually display them somehow. Skins in League of Legends are 
 	customizations that change the way certain characters look that you can buy for
 	money. There isn't really a methodbuilt-in into the game to see all of the skins you 
 	currently own. I decided to manually go through each champion(character in the game) I
-	owned and look through the skins I had for them and record them into an excel 
+	owned and look through the skins I had for them and record them into an Excel 
 	spreadsheet just so I knew what I owned. I wanted to use the Riot API in some way
 	so I figured I may as well make a program to read the skins I own and generate 
 	an HTML page containing the art associated with each skin. The source code for this
-	program can be be found [here]() 
+	program can be be found [here](https://github.com/Phansa/Phansa.github.io/blob/master/main.py).
+	I used a template program from a Youtube video I found to understand how the the API
+	worked first, then started working on my own project. Part of this program reads
+	an Excel spreadsheet in as input and outputs a result Excel spreadsheet. This was 
+	necessary because when accessing the API I used an exact string match to find out
+	if I owned a champion skin, but in my own Excel spreadsheet I had only written the
+	first part of a skin name (for example Frostfire Annie was just Frostfire) and thus
+	I needed to append the second part to multiple cells in my source excel spreadsheet.
+	Instead of doing this manually, I did it programatically and afterwards double checked
+	to remove some unncessary additions (for example Snowmerdinger is the correct string and
+	Snowmerdinger Heimerdinger is the incorrect string so I had to fix this). Then reading
+	in my new, correct Excel spreadsheet I looped through each champion then each skins
+	field of the JSON response to find out the unique number associated with each skin.
+	This number is used to in the image urls to identify which skin is which, so 
+	for example Justicar Aatrox is http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_1.jpg
+	and the default Aatrox skin is http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg.
+	These URLS are saved into a list that I write to my output HTML file at the very end.
+	I use insertion sort to make sure this list in alphabetical order. </p>
+	<p>I can expand upon this project in two ways, first would be to style the HTML page
+	/ make it more interesting. Second I could make a program that would generate the Skins
+	Excel spreadsheet using data from a user's League of Legends client (as that is the place
+	where the skin data is stored) and then using that generated Excel spreadsheet I could
+	make an HTML page and host it on my website for them. Another option would be to create
+	a webform people can fill out containing all skins in the game then use the response to
+	make an Excel spreadsheet locally and run my HTML generating program locally and finally
+	upload the page to my website/send the person who submitted the URL a link to their
+	very own skins page. This method required that the user will go through all the champions
+	/skins they own however so it's more time consuming than being able to access the information
+	directly from their client, however requires less from a user because they wouldn't have to 
+	install any applicaiton/can do it all from the wb. This would be a valuable service to 
+	the League of Legends community	as currently there isn't a very intuitive way to see 
+	all the skins you have owned at once and I look forwards to working on it some more!
+	</p>
 </html>
