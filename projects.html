@@ -21,6 +21,7 @@
  			}
  			p
  			{
+ 				text-indent:40px;
  				font-size: 16pt;
  				margin: 0;
  				padding: 0;
@@ -358,8 +359,12 @@
 	in my new, correct Excel spreadsheet I looped through each champion then each skins
 	field of the JSON response to find out the unique number associated with each skin.
 	This number is used to in the image urls to identify which skin is which, so 
-	for example Justicar Aatrox is http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_1.jpg
-	and the default Aatrox skin is http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg.
+	for example Justicar Aatrox is 
+	<a href="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_1.jpg">
+	http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_1.jpg" </a>
+	and the default Aatrox skin is 
+	<a href="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg">
+	http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg </a>.
 	These URLS are saved into a list that I write to my output HTML file at the very end.
 	I use insertion sort to make sure this list in alphabetical order. </p>
 	<p>I can expand upon this project in two ways, first would be to style the HTML page
