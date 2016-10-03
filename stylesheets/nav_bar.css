@@ -30,3 +30,8 @@ li a:hover
   background-color: yellow;
   color: green;
 }
+h1
+{
+  text-align: center;
+  font-size: 24pt;
+}
