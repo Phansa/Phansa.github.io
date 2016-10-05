@@ -43,7 +43,7 @@ def main():
         #********************Start Program************************
         #Used in my getChampionData function. API Key has been commented out for security reasons.
         region = "na"
-        APIKey = "insert your key"
+        APIKey = "RGAPI-FE3B56D2-82C8-409C-A04D-4D5DA73A48C0"
         #Will store the skins I own read in from an excel worksheet
         skins_list = []
         champion_names = []
@@ -168,10 +168,23 @@ def main():
         #print(output_url_list)
         #sorted(output_url_list, key=lambda x: x[1])
         out2 = open("league_skins.html", "w+")
-        out2.write("<!DOCTYPE html>")
-        out2.write("\n")
-        out2.write("<html>")
-        out2.write("\n")                                              
+        out2.write("<!DOCTYPE html> \n")
+        out2.write("<html> \n")
+        #Nav Bar
+        out2.write("""<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css"> 
+</head> 
+<nav> 
+  <ul> 
+    <li><a href="book_reviews.html">Book Reviews</a></li> 
+    <li><a href='gre_vocab.html'>GRE Vocab</a></li> 
+    <li><a href='index.html'>Index</a></li> 
+    <li><a href="league_skins.html">League Skins</a></li> 
+    <li><a href='photos.html'>Photos</a></li> 
+    <li><a href='projects.html'>Projects</a></li> 
+    <li><a href='volunteering.html'>Volunteering</a></li> 
+  </ul> 
+</nav> \n \n""")
         for x in range(0, len(output_url_list)):
             for z in range(0, len(output_url_list[x])):
                 if(z == 0):
