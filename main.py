@@ -43,7 +43,7 @@ def main():
         #********************Start Program************************
         #Used in my getChampionData function. API Key has been commented out for security reasons.
         region = "na"
-        APIKey = "RGAPI-FE3B56D2-82C8-409C-A04D-4D5DA73A48C0"
+        APIKey = "API KEY"
         #Will store the skins I own read in from an excel worksheet
         skins_list = []
         champion_names = []
