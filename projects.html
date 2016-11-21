@@ -6,6 +6,7 @@
  		<style> 		
  			h3
  			{
+ 				text-align: left;
  				font-weight: bold;
  				margin: 0;
  				padding: 0;
@@ -62,18 +63,23 @@
 	<br />
 	<img src="images/IFMP Database App/Login.png">
 	<br />
+	<p>
 	This is the basic login screen. You can log onto this application as either a user or
 	an administrator.
+	</p>
 	<br />
 	<img src="images/IFMP Database App/Login2.png">
 	<br />
+	<p>
 	This is the screen that allows you to log into the database. You will need to have
 	your IP address added to a list of IP's addressed allowed to access the database before 
 	you can use this application. If your IP address isn't on that list then you cannot 
 	proceed	further.
+	</p>
 	<br />
 	<img src="images/IFMP Database App/MainUI1.png">
 	<br />
+	<p>
 	This is the main user interface. It contains many features that I will go over. For
 	demonstration purposes I have excluded all actual members and am just using fake
 	members I created named test one and test two. A feature of this application is the 
@@ -92,16 +98,55 @@
 	<br />
 	<p>
 	A user may click on the ID column of any member and autofill the textboxes with the
-	data stored in the database corresponding to that member.
+	data stored in the database corresponding to that member. </p>
 	<br />
 	<img src="images/IFMP Database App/ID Complete.gif">
 	<br />
+	<p>
 	A user may fill in textboxes then press update in order to update the information
-	stored in the database. 
+	stored in the database. </p>
 	<br />
 	<img src="images/IFMP Database App/Update_Example.gif">
 	<br />
+	<h3> Tables </h3>
+	<p>
+	The main table being used is called membership. 
+	The defaults table is used to store default values for event/channel/payment method that will be
+	autofilled when add member is called. The user can press menu->settings->set default event/channel/payment. 
+	The defaults table will then be updated with the currently selected value for any of these three combo boxes. </p>
+	<h3> Default Table Structure </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/DefaultsTable.png">
+	<br />
+	<h3> Setting Default Event </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/SetDefaultEvent.gif">
+	<br />
+	<p>
+	The values that cane be chosen are based off three other tables,
+	events/channels/methods. Each of these tables contain one field (Event/Channel/Payment) which are primary key and are sorted in ascneding order.
+	Below is an example of the event table, however the Channel and Payment tables are the same. 
 	</p>
+	<h3> Event Table Structure </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/EventsTable.png">
+	<br />
+	<h3> Event Table Contents </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/EventsTableContents.png">
+	<br />
+	<p> The following code will initalize the EventBox combo box based on the contents of the Events Table. Of course, the same
+	method is called to initialize the Payment/Channel combo boxes. </p>
+	<br />
+	<img src="images/IFMP Database App/Tables/InitializeEventBox.png">
+	<br />
+	<p>	When the application loads or add member is called, the following code will execute to find the current default values
+	for the Event/Payment/Channel boxes and set the value to the defaults. For Payment/Channel, the select statement is just
+	select [Default Payment] / [Default Channel] </p>
+	<br />
+	<img src="images/IFMP Database App/Tables/SetDefaultEventBox.png">
+	<br />
+
 	<h1> Pokemon Snowdown Project </h1>
 	<p>
 	I worked on this project as part of one of my classes, Introduction to Open Source, 
