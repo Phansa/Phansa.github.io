@@ -1,27 +1,31 @@
 function fitch_one()
+{	
+	solution(fitch("P","operation", "Q", "operation_one"));
+}
+function fitch(a,b,c,d)
 {
-	var P = document.getElementById("P").value;
+	var P = document.getElementById(a).value;
 	if(!valid_input(P))
 	{
-		alert("Please enter valid input into P");
-		return;
+		alert("Please enter valid input into" + a);
+		return false;
 	}
-	var OP = document.getElementById("operation").value;
+	var OP = document.getElementById(b).value;
 	if(!valid_input(OP))
 	{
-		alert("Please enter valid input into Operation");
-		return;
+		alert("Please enter valid input into " + b);
+		return false;
 	}
-	var Q = document.getElementById("Q").value;
+	var Q = document.getElementById(c).value;
 	if(!valid_input(Q))
 	{
-		alert("Please enter valid input into Q");
-		return;
+		alert("Please enter valid input into" + c);
+		return false;
 	}
     P = convert_to_bool(P);
 	Q = convert_to_bool(Q);
 	OP = convert_to_bool(OP);
-	var e = document.getElementById("operation_one").value;
+	var e = document.getElementById(d).value;
 	if(e == 1)
 	{
 		var result = (P || !Q);
@@ -38,7 +42,11 @@ function fitch_one()
 	{
 		var result = ((P || !Q) && (!P || Q));
 	}
-	solution(result, OP);
+	return (result && OP);
+}
+function fitch_two()
+{
+	solution(fitch("P1","OP11","Q1", "operation_two_one") && fitch("Q1", "OP12", "R1", "operation_two_two"))
 }
 function valid_input(a)
 {
@@ -62,11 +70,11 @@ function convert_to_bool(a)
 		return false;
 	}
 }
-function solution(a,b)
+function solution(a)
 {
-	if(a && b)
+	if(a)
 	{
-		alert("Correct!");
+		alert("Correct!")
 	}
 	else
 	{

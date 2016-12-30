@@ -48,7 +48,32 @@
 	    <input type="text" id="P">
 	    <input type="text" id="operation">
 	    <input type="text" id="Q">
+	    <!--<input type="text" id="result1" readonly> -->
 	    <br />
         <button onclick="fitch_one()">Evaluate</button>
+        <br />
+        (P
+		<select id="operation_two_one">
+		  <option value="1">-></option>
+		  <option value="2">∧</option>
+		  <option value="3">∨</option>
+		  <option value="4"><-></option>
+		</select>
+		Q)
+		<select id="operation_two_two">
+		  <option value="1">-></option>
+		  <option value="2">∧</option>
+		  <option value="3">∨</option>
+		  <option value="4"><-></option>
+		</select>
+		R
+		<br />
+		<input type="text" id="P1">
+	    <input type="text" id="OP11">
+	    <input type="text" id="Q1">
+ 		<input type="text" id="OP12">
+	    <input type="text" id="R1">
+	    <br />
+	    <button onclick="fitch_two()">Evaluate</button>
 	</div>
 </html>
