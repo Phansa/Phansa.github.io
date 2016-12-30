@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css">
+		<script type="text/javascript" src="javascripts/fitch.js"></script>
+	    <style>
+	    	p
+	    	{
+	    		font-size: 24pt;
+	    	}	
+	    	div
+	    	{
+	    		text-align: center;
+	    	}    	
+	    	input
+	    	{
+	    		width: 20px;
+	    	}
+	    </style>
+	    <nav>
+	  		<ul>
+		      <li><a href="book_reviews.html">Book Reviews</a></li>
+		      <li><a href='games.html'>Games</a></li>
+		      <li><a href='gre_vocab.html'>GRE Vocab</a></li>
+		      <li><a href='index.html'>Index</a></li>
+		      <li><a href="league_skins.html">League Skins</a></li>
+		      <li><a href='photos.html'>Photos</a></li>
+		      <li><a href='projects.html'>Projects</a></li>
+		      <li><a href='volunteering.html'>Volunteering</a></li>
+    		</ul>		
+    	</nav>
+	</head>
+	<div>
+		P
+		<select id="operation_one">
+		  <option value="1">-></option>
+		  <option value="2">∧</option>
+		  <option value="3">∨</option>
+		  <option value="4"><-></option>
+		</select>
+		Q
+		<br/ >
+	    <input type="text" id="P">
+	    <input type="text" id="operation">
+	    <input type="text" id="Q">
+	    <br />
+        <button onclick="fitch_one()">Evaluate</button>
+	</div>
+</html>
