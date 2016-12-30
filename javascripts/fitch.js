@@ -1,66 +1,50 @@
 function fitch_one()
 {	
-	var one = fitch("P","operation", "Q", "operation_one");
-	if(one)
+	if(validate("P") && validate("Q") && validate("operation"))
 	{
+		var one = fitch("P", "Q", "operation_one");
 		solution(compare_to(one, "operation"));
 	}
-	else
-	{
-		solution(false);
-	}
-	//solution(compare_to(fitch("P","operation", "Q", "operation_one"), "operation"));
 }
-function fitch(a,b,c,d)
+function validate(a)
 {
-	//alert(document.getElementById("operation_one").value);
 	var P = document.getElementById(a).value;
 	if(!valid_input(P))
 	{
 		alert("Please enter valid input into " + a);
 		return false;
 	}
-	var OP = document.getElementById(b).value;
-	if(!valid_input(OP))
+	return true;
+}
+function fitch(p,q,operator)
+{
+	var P;
+	var Q;
+	if(typeof p == 'string')
 	{
-		alert("Please enter valid input into " + b);
-		return false;
+		P = convert_to_bool(document.getElementById(p).value);
 	}
-	var Q = document.getElementById(c).value;
-	if(!valid_input(Q))
+	else
 	{
-		alert("Please enter valid input into " + c);
-		return false;
+		P = p;
 	}
-    P = convert_to_bool(P);
-	Q = convert_to_bool(Q);
-	OP = convert_to_bool(OP);
-	var e = document.getElementById(d).value;
+	if(typeof q == 'string')
+	{
+		Q = convert_to_bool(document.getElementById(q).value);
+	}
+	else
+	{
+		Q = q;
+	}
+	var e = document.getElementById(operator).value;
 	var result = evaluate(P,Q,e);
 	return result;
-}
-function fitch2(bool1, op2, field2, operation_combo)
-{
-	var OP = document.getElementById(op2).value;
-	if(!valid_input(OP))
-	{
-		alert("Please enter valid input into " + op2);
-		return false;
-	}
-	var Q = document.getElementById(field2).value;
-	if(!valid_input(Q))
-	{
-		alert("Please enter valid input into " + field2);
-		return false;
-	}
-	var e = document.getElementById(operation_combo).value;
-	return evaluate(bool1, Q, e);
 }
 function evaluate(P,Q,op)
 {
 	if(op == 1)
 	{
-		var result = (P || !Q);
+		var result = (!P || Q);
 	}
 	if(op == 2)
 	{
@@ -72,30 +56,31 @@ function evaluate(P,Q,op)
 	}
 	if(op == 4)
 	{
-		var result = ((P || !Q) && (!P || Q));
+		var result = ((!P || Q) && (P || !Q));
 	}
 	return result;
 }
 function compare_to(result, field)
 {
-	return(result && convert_to_bool(document.getElementById(field).value));
+	var field2 = document.getElementById(field).value;
+	if(!result)
+	{
+		return (field2 == "F" || field2 == "f");
+	}
+	else
+	{
+		return (field2 == "T" || field2 == "t");
+	}
 }
 function fitch_two()
 {
-	var one = fitch("P1","OP11","Q1", "operation_two_one");
-	if(one)
+	if(validate("P1") && validate("Q1") && validate("R1") && validate("OP11") && validate("OP12"))
 	{
-		if(compare_to(one, "OP11"))
+		var one = fitch("P1","Q1", "operation_two_one");
+		if(solution(compare_to(one, "OP11")))
 		{
-			var two = fitch2(one, "OP12", "R1", "operation_two_two")
-			if(two)
-			{
-				solution(compare_to(two, "OP12"));
-			}
-		}
-		else
-		{
-			solution(false);
+			var two = fitch(one, "R1", "operation_two_two")
+			solution(compare_to(two, "OP12"));
 		}
 	}
 }
@@ -125,10 +110,12 @@ function solution(a)
 {
 	if(a)
 	{
-		alert("Correct!")
+		alert("Correct!");
+		return true;
 	}
 	else
 	{
 		alert("Incorrect!");
+		return false;
 	}
 }
