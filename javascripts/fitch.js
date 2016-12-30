@@ -1,11 +1,28 @@
 function fitch_one()
 {	
+	//First makes sure all inputs are valid.
 	if(validate("P") && validate("Q") && validate("operation"))
 	{
+		//Performs the evaluation through the fitch function then checks if it was the same as the
+		//User's guess.
 		var one = fitch("P", "Q", "operation_one");
 		solution(compare_to(one, "operation"));
 	}
 }
+//Same concept as fitch_one, but slightly more complicated since there are 3 variables.
+function fitch_two()
+{
+	if(validate("P1") && validate("Q1") && validate("R1") && validate("OP11") && validate("OP12"))
+	{
+		var one = fitch("P1","Q1", "operation_two_one");
+		if(solution(compare_to(one, "OP11")))
+		{
+			var two = fitch(one, "R1", "operation_two_two")
+			solution(compare_to(two, "OP12"));
+		}
+	}
+}
+//The only valid inputs are T,t,F,f and all other inputs will be rejected.
 function validate(a)
 {
 	var P = document.getElementById(a).value;
@@ -16,6 +33,19 @@ function validate(a)
 	}
 	return true;
 }
+function valid_input(a)
+{
+	if(a != "T" && a != "t" && a != "f" && a != "F")
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+//Reads in the boolean values for P and Q as well as the operator to be assigned then
+//passes control to the evaluate function and returns the result. (Similar to controller).
 function fitch(p,q,operator)
 {
 	var P;
@@ -37,9 +67,21 @@ function fitch(p,q,operator)
 		Q = q;
 	}
 	var e = document.getElementById(operator).value;
-	var result = evaluate(P,Q,e);
-	return result;
+	return evaluate(P,Q,e);
 }
+//Converts the letters to boolean types.
+function convert_to_bool(a)
+{
+	if(a == "T" || a == "t")
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+//OP 1 is P -> Q, OP 2 is P ^ Q, OP 3 is P ∨ Q, OP 4 is P <-> Q.
 function evaluate(P,Q,op)
 {
 	if(op == 1)
@@ -60,6 +102,7 @@ function evaluate(P,Q,op)
 	}
 	return result;
 }
+//Compares the evalauted result to the user's guess.
 function compare_to(result, field)
 {
 	var field2 = document.getElementById(field).value;
@@ -72,40 +115,8 @@ function compare_to(result, field)
 		return (field2 == "T" || field2 == "t");
 	}
 }
-function fitch_two()
-{
-	if(validate("P1") && validate("Q1") && validate("R1") && validate("OP11") && validate("OP12"))
-	{
-		var one = fitch("P1","Q1", "operation_two_one");
-		if(solution(compare_to(one, "OP11")))
-		{
-			var two = fitch(one, "R1", "operation_two_two")
-			solution(compare_to(two, "OP12"));
-		}
-	}
-}
-function valid_input(a)
-{
-	if(a != "T" && a != "t" && a != "f" && a != "F")
-	{
-		return false;
-	}
-	else
-	{
-		return true;
-	}
-}
-function convert_to_bool(a)
-{
-	if(a == "T" || a == "t")
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
+//Based on the results of the conmpare_to function, tells the user if they were correct 
+//or not. (Similar to view)
 function solution(a)
 {
 	if(a)
