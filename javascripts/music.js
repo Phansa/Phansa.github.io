@@ -90,17 +90,17 @@ function change()
 	else if(x == 6)
 	{
 		var temp = Math.floor(Math.random() * 3);
-		if(temp == 1)
+		if(temp == 0)
 		{
 			//Source http://static.zerochan.net/Litten.full.1999835.jpg
 			document.getElementById("MainImage").src = "images/Music/litten.jpg";
 		}
-		else if(temp == 2)
+		else if(temp == 1)
 		{
 			//Source http://pre09.deviantart.net/06a1/th/pre/f/2016/131/e/6/litten_by_hikariviny-da253cu.png
 			document.getElementById("MainImage").src = "images/Music/litten2.png";
 		}
-		else if(temp == 3)
+		else if(temp == 2)
 		{
 			//Source http://pre11.deviantart.net/9545/th/pre/i/2016/188/0/a/litten_for_president__by_arkadark-da95400.jpg
 			document.getElementById("MainImage").src = "images/Music/litten3.jpg";
