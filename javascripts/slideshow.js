@@ -18,7 +18,7 @@ function slideShow() {
     slideShowRunning: true, // Used to record when the slide show is running and when it's not. The slide show is always initially running.    
     slideIndex: 0 // The index of the current slide image.
   }
-  
+
   /* MAIN *************************************************************************************************/
   
   initializeGlobals();  
