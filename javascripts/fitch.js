@@ -86,15 +86,15 @@ function evaluate(P,Q,op)
 {
 	if(op == 1)
 	{
-		var result = (!P || Q);
+		var result = (P && Q);
 	}
 	if(op == 2)
 	{
-		var result = (P && Q);
+		var result = (P || Q);
 	}
 	if(op == 3)
 	{
-		var result = (P || Q);
+		var result = (!P || Q);
 	}
 	if(op == 4)
 	{

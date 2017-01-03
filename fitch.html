@@ -16,6 +16,12 @@
 	    	{
 	    		width: 20px;
 	    	}
+	    	table
+	    	{
+	    		display: inline-block;
+	    		margin-right: 30px;
+	    		font-size: 24pt;
+	    	}
 	    </style>
 	    <nav>
 	  		<ul>
@@ -32,17 +38,131 @@
     	</nav>
 	</head>
 	<p>
-		Fitch is a formal logic system for proofs. The use this application input values for each part of the
+		Fitch is a formal logic system for proofs. To use this application input values for each part of the
 		expression as well as what you think the proper values of the connectives(implication, and, or, etc.) should
-		be then press evaluate. The program will then tell you whether you were correct or not.
+		be then press evaluate. The program will then tell you whether you were correct or not. Valid inputs for
+		the variables/connectives are T/t or F/f. The program will tell you if your connective guesses are
+		correct or incorrect. If there are multiple connectives, it will evaluate them in left to right order
+		prioritizing parenthesis first. It will evaluate each connective, so if you get an early part
+		incorrect it will not proceed. 
+		<br />
+		Here are some truth tables for reference. The last coulmn represents the connective value.
 	</p>
+	<table>	
+		<tr>
+			<th> P </th>
+			<th> Q </th>
+			<th> ∧ </th>
+		</tr>
+		<tr>
+			<td> T </td>
+			<td> T </td>
+			<td> T </td>
+		</tr>
+		<tr> 
+			<td> T </td>
+			<td> F </td>
+			<td> F </td>
+		</tr>
+		<tr>
+			<td> F </td>
+			<td> T </td>
+			<td> F </td>
+		</tr>
+		<tr>
+			<td> F </td>
+			<td> F </td>
+			<td> F </td>
+		</tr>
+	</table>
+	<table>	
+		<tr>
+			<th> P </th>
+			<th> Q </th>
+			<th> ∨ </th>
+		</tr>
+		<tr>
+			<td> T </td>
+			<td> T </td>
+			<td> T </td>
+		</tr>
+		<tr> 
+			<td> T </td>
+			<td> F </td>
+			<td> T </td>
+		</tr>
+		<tr>
+			<td> F </td>
+			<td> T </td>
+			<td> T </td>
+		</tr>
+		<tr>
+			<td> F </td>
+			<td> F </td>
+			<td> F </td>
+		</tr>
+	</table>
+	<table>	
+		<tr>
+			<th> P </th>
+			<th> Q </th>
+			<th> → </th>
+		</tr>
+		<tr>
+			<td> T </td>
+			<td> T </td>
+			<td> T </td>
+		</tr>
+		<tr> 
+			<td> T </td>
+			<td> F </td>
+			<td> F </td>
+		</tr>
+		<tr>
+			<td> F </td>
+			<td> T </td>
+			<td> T </td>
+		</tr>
+		<tr>
+			<td> F </td>
+			<td> F </td>
+			<td> T </td>
+		</tr>
+	</table>
+	<table>	
+		<tr>
+			<th> P </th>
+			<th> Q </th>
+			<th> ↔ </th>
+		</tr>
+		<tr>
+			<td> T </td>
+			<td> T </td>
+			<td> T </td>
+		</tr>
+		<tr> 
+			<td> T </td>
+			<td> F </td>
+			<td> F </td>
+		</tr>
+		<tr>
+			<td> F </td>
+			<td> T </td>
+			<td> F </td>
+		</tr>
+		<tr>
+			<td> F </td>
+			<td> F </td>
+			<td> T </td>
+		</tr>
+	</table>
 	<div>
 		P
 		<select id="operation_one">
-		  <option value="1">-></option>
-		  <option value="2">∧</option>
-		  <option value="3">∨</option>
-		  <option value="4"><-></option>
+		  <option value="1">∧</option>
+		  <option value="2">∨</option>
+		  <option value="3">→</option>
+		  <option value="4">↔</option>
 		</select>
 		Q
 		<br/ >
@@ -55,17 +175,17 @@
         <br />
         (P
 		<select id="operation_two_one">
-		  <option value="1">-></option>
-		  <option value="2">∧</option>
-		  <option value="3">∨</option>
-		  <option value="4"><-></option>
+		  <option value="1">∧</option>
+		  <option value="2">∨</option>
+		  <option value="3">→</option>
+		  <option value="4">↔</option>
 		</select>
 		Q)
 		<select id="operation_two_two">
-		  <option value="1">-></option>
-		  <option value="2">∧</option>
-		  <option value="3">∨</option>
-		  <option value="4"><-></option>
+		  <option value="1">∧</option>
+		  <option value="2">∨</option>
+		  <option value="3">→</option>
+		  <option value="4">↔</option>
 		</select>
 		R
 		<br />
