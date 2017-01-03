@@ -1,4 +1,6 @@
-//Emoji Website - http://kaomoji.ru/en/
+/*Emoji Website - 
+http://kaomoji.ru/en/
+*/
 var x = 0;
 var sources =[];
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
@@ -8,6 +10,7 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182847897&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195103737&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230222227&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/210503956&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -16,6 +19,18 @@ song_titles.push(".･ﾟﾟ･(／ω＼)･ﾟﾟ･. Lost - Fan Fiction .･�
 song_titles.push("(=①ω①=) Cat Cafe - Yoshi & Komono (=①ω①=)");
 song_titles.push("♡＼(￣▽￣)／♡ Begin Again - Fan Fiction ♡＼(￣▽￣)／♡");
 song_titles.push("╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ	 Cool Teens - Ignite ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ");
+song_titles.push("o( ❛ᴗ❛ )o Stars - Cool Teens o( ❛ᴗ❛ )o");
+//var song_lengths = [];
+//song_lengths.push(180000 + 17000);
+/*window.onload = main;
+
+function main()
+{
+	//setInterval(next(), 10000000000);
+	//setInterval(alert("HI"), 5000);
+	next();
+	//alert("HI");
+}*/
 function next()
 {
 	if(x < sources.length - 1)
@@ -76,7 +91,8 @@ function change()
 	}
 	else if(x == 5)
 	{
-		if(Math.floor(Math.random() * 2) == 1)
+		var temp = Math.floor(Math.random() * 2);
+		if(temp == 1)
 		{
 			//Source http://static2.comicvine.com/uploads/original/13/132327/2840382-ozym_cv6_var.jpg
 			document.getElementById("MainImage").src = "images/Music/ozymandias1.jpg";
@@ -106,4 +122,17 @@ function change()
 			document.getElementById("MainImage").src = "images/Music/litten3.jpg";
 		}
 	}
+	else if(x == 7)
+	{
+		var temp = Math.floor(Math.random() * 2);
+		if(temp == 1)
+		{
+			document.getElementById("MainImage").src = "images/Music/DVA_Arcade.png";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "images/Music/PokeStars.png";
+		}
+	}
+	//main();
 }
