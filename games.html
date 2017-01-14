@@ -40,6 +40,35 @@
 	<br />
 	<button onclick="flip()">Flip Coin</button>
 	</div>
+	<div id="calculator">
+		<input type="text" id="left_add">
+		<input type="text" id="plus" value="+" tabIndex=-1 style="width: 15px;" readonly>
+		<input type="text" id="right_add">
+	    <button onclick="add()">Add</button>
+		<input type="text" id="add_result" tabIndex=-1 readonly>
+		<br />
+		<input type="text" id="left_mul">
+		<input type="text" id="mul" value="*" tabIndex=-1 style="width: 15px;" readonly>
+		<input type="text" id="right_mul">
+	    <button onclick="multiply()">Multiply</button>
+		<input type="text" id="mul_result" tabIndex=-1 readonly>
+		<br />
+		<input type="text" id="left_sub">
+		<input type="text" id="sub" value="-" tabIndex=-1 style="width: 15px;" readonly>
+		<input type="text" id="right_sub">
+	    <button onclick="subtract()">Subtract</button>
+		<input type="text" id="sub_result" tabIndex=-1 readonly>
+		<br />
+		<input type="text" id="left_div">
+		<input type="text" id="div" value="%" tabIndex=-1 style="width: 15px;" readonly>
+		<input type="text" id="right_div">
+	    <button onclick="division()">Division</button>
+		<input type="text" id="div_result" tabIndex=-1 readonly>	
+		<br />
+		Type an equation here!
+		<input type="text" id="equation" style="width: 500px;">
+		<button onclick="dynamic_calculate()">Calculate</button>
+		<input type="text" id="equate_result" tabIndex=-1 readonly>	
 
 	<!--<input type="text" id="Equation">
 	<button onclick="calculate()">Calculate</button>
