@@ -4,6 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css">
 		<script type="text/javascript" src="javascripts/flipper.js"></script>
 		<script type="text/javascript" src="javascripts/calculator.js"></script>
+		<script type="text/javascript" src="javascripts/rpg.js"></script>
 		<style>
 			p
 			{
@@ -35,6 +36,14 @@
 	Tails: <input type="text" id="tails" name="Total Flips" readonly="true"><br>
 	</p>
 	<br />
+	<div id="RPG">
+	Knight's Tale RPG(In Progress)
+	<br />
+	<textarea id="rpg" rows="10" columns="20" style="width: 600px;" readonly>Today is the day of the king's coronation and as the herald to the event it is of the utmost importance to get from your house to the castle on time. You take your package, it's contents unkown to you, and depart from your humble abode. You come across a crossing and on the left is the Whispering Forest, rumoured to be haunted, and to the right is the King's Crossing path. You have heard whispers of	increased bandit activity along this path. &#13;&#10Choice 1- Go through the Whispering Forest. &#13;&#10Choice 2- Go through King's Crossing. </textarea>
+	<br />
+	<button onclick="left()">Choice 1</button>
+	<button onclick="right()">Choice 2</button>
+	</div>
 	<div id="button">
 	<img id="Coin" src="images/Flipper/Heads.png">
 	<br />
@@ -65,7 +74,7 @@
 	    <button onclick="division()">Division</button>
 		<input type="text" id="div_result" tabIndex=-1 readonly>	
 		<br />
-		Type an equation here!
+		Type an equation here!(not working yet)
 		<input type="text" id="equation" style="width: 500px;">
 		<button onclick="dynamic_calculate()">Calculate</button>
 		<input type="text" id="equate_result" tabIndex=-1 readonly>	
