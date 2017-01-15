@@ -14,6 +14,10 @@
 			{
 				text-align: center;
 			}
+			h1
+			{
+				display: inline;
+			}
 		</style>
 	</head>
 	<nav>
@@ -32,24 +36,27 @@
  	</nav>
 	<br />
 	<div id="RPG">
-	Knight's Tale RPG(In Progress)
-	<br />
-	<textarea id="rpg" rows="10" columns="20" style="width: 600px;" readonly>Today is the day of the king's coronation and as the herald to the event it is of the utmost importance to get from your house to the castle on time. You take your package, it's contents unkown to you, and depart from your humble abode. You come across a crossing and on the left is the Whispering Forest, rumoured to be haunted, and to the right is the King's Crossing path. You have heard whispers of	increased bandit activity along this path. &#13;&#10Choice 1- Go through the Whispering Forest. &#13;&#10Choice 2- Go through King's Crossing. </textarea>
-	<br />
-	<button onclick="left()">Choice 1</button>
-	<button onclick="right()">Choice 2</button>
+		<h1> Knight's Tale RPG(In Progress) </h1>
+		<br />
+		<textarea id="rpg" rows="10" columns="20" style="width: 600px;" readonly>Today is the day of the king's coronation and as the herald to the event it is of the utmost importance to get from your house to the castle on time. You take your package, it's contents unkown to you, and depart from your humble abode. You come across a crossing and on the left is the Whispering Forest, rumoured to be haunted, and to the right is the King's Crossing path. You have heard whispers of	increased bandit activity along this path. &#13;&#10Choice 1- Go through the Whispering Forest. &#13;&#10Choice 2- Go through King's Crossing. </textarea>
+		<br />
+		<button onclick="left()">Choice 1</button>
+		<button onclick="right()">Choice 2</button>
 	</div>
-	<p>
-	Total Flips: <input type="text" id="totalflips" name="Total Flips" readonly="true"><br>
-	Heads: <input type="text" id="heads" name="Total Flips" readonly="true"><br>
-	Tails: <input type="text" id="tails" name="Total Flips" readonly="true"><br>
-	</p>
 	<div id="button">
-	<img id="Coin" src="images/Flipper/Heads.png">
-	<br />
-	<button onclick="flip()">Flip Coin</button>
+		<h1> Coin Flipper </h1>
+		<p>
+		Total Flips: <input type="text" id="totalflips" name="Total Flips" readonly="true"><br>
+		Heads: <input type="text" id="heads" name="Total Flips" readonly="true"><br>
+		Tails: <input type="text" id="tails" name="Total Flips" readonly="true"><br>
+		</p>
+		<img id="Coin" src="images/Flipper/Heads.png">
+		<br />
+		<button onclick="flip()">Flip Coin</button>
 	</div>
 	<div id="calculator">
+		<h1> Calculator </h1>
+		<br />
 		<input type="text" id="left_add">
 		<input type="text" id="plus" value="+" tabIndex=-1 style="width: 15px;" readonly>
 		<input type="text" id="right_add">
