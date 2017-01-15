@@ -1,4 +1,5 @@
 var index = 1;
+//The story of this role playing game is stored as a tree in this array. Index 2i is the left child and index 2i + 1 is the right child.
 var branches =[];
 //0
 branches.push("You died! Press Choice 1 or Choice 2 to play again.");
