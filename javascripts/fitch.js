@@ -6,7 +6,14 @@ function fitch_one()
 		//Performs the evaluation through the fitch function then checks if it was the same as the
 		//User's guess.
 		var one = fitch("P", "Q", "operation_one");
-		solution(compare_to(one, "operation"));
+		if(solution(compare_to(one, "operation")))
+		{
+			alert("Correct!");
+		}
+		else
+		{
+			alert("Incorrect connective 1");
+		}
 	}
 }
 //Same concept as fitch_one, but slightly more complicated since there are 3 variables.
@@ -18,7 +25,18 @@ function fitch_two()
 		if(solution(compare_to(one, "OP11")))
 		{
 			var two = fitch(one, "R1", "operation_two_two")
-			solution(compare_to(two, "OP12"));
+			if(solution(compare_to(two, "OP12")))
+			{
+				alert("Correct!");
+			}
+			else
+			{
+				alert("Incorrect connective 2!")
+			}
+		}
+		else
+		{
+			alert("Incorrect connective 1!")
 		}
 	}
 }
@@ -121,12 +139,10 @@ function solution(a)
 {
 	if(a)
 	{
-		alert("Correct!");
 		return true;
 	}
 	else
 	{
-		alert("Incorrect!");
 		return false;
 	}
 }
