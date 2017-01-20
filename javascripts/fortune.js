@@ -13,11 +13,13 @@ sources.push("http://imgs.xkcd.com/comics/ios_keyboard.png");
 sources.push("http://imgs.xkcd.com/comics/cloud.png");
 sources.push("http://imgs.xkcd.com/comics/efficiency.png");
 sources.push("https://imgs.xkcd.com/comics/a_better_idea.png");
+sources.push("images/fortune/meanstack.png");
 function fortune()
 {
 	image = document.getElementById('Fortune');
 	//http://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
 	//Everytime you add a new image, increase by 1!
-	var randomnumber = Math.floor(Math.random() * (13 - 0 + 1));
+	var randomnumber = Math.floor(Math.random() * (15));
+	//var randomnumber = 14;
 	image.src = sources[randomnumber];
 }
