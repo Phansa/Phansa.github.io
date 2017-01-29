@@ -14,6 +14,7 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/234739832&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233798320&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/217970408&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233098110&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -26,6 +27,7 @@ song_titles.push("o( ❛ᴗ❛ )o Gregory Esayan - Monday Night (feat. Ai Takeka
 song_titles.push("٩(｡•́‿•̀｡)۶	We All Fall Down - A-Track ft. Jamie Lidell ٩(｡•́‿•̀｡)۶	");
 song_titles.push("(✿◕﹏◡)~★ Been You - Justin Bieber (✿◕﹏◡)~★");
 song_titles.push("(^=◕ᴥ◕=^) Everything Is Embarassing - Sky Ferreira (^=◕ᴥ◕=^)");
+song_titles.push("(⊃｡•́‿•̀｡)⊃	Tom Swoon, Paris & Simo - Wait");
 function next()
 {
 	if(x < sources.length - 1)
@@ -188,10 +190,18 @@ function change()
 	}
 	else if(x == 9)
 	{
-		temp = Math.floor(Math.random() * 2);
+		temp = Math.floor(Math.random() * 4);
 		if(temp == 1)
 		{
 			document.getElementById("MainImage").src = "http://media.comicbook.com/2016/05/watchmen-dr--manhattan-hd-wallpapers-184238.jpg";
+		}
+		else if(temp == 2)
+		{
+			document.getElementById("MainImage").src = "images/Music/SombraRadiantHope.png";
+		}
+		else if(temp == 3)
+		{
+			document.getElementById("MainImage").src = "images/Music/BatmanCatwomanHush.jpg";
 		}
 		else
 		{
@@ -209,6 +219,19 @@ function change()
 		else
 		{
 			document.getElementById("MainImage").src = "https://s-media-cache-ak0.pinimg.com/736x/0c/70/bf/0c70bffe17bd387cd35d359769da0bd5.jpg";
+		}
+	}
+	else if(x == 11)
+	{
+		temp = Math.floor(Math.random() * 2);
+		if(temp == 1)
+		{
+			document.getElementById("MainImage").src = "https://secure.static.tumblr.com/9a374cd9a0ca7da0d98f1074c20b40b4/ntg1jvm/p0Lnmvxpy/tumblr_static_tumblr_static__640.gif";
+		}
+		else
+		{
+			//Source - http://vignette3.wikia.nocookie.net/wowwiki/images/6/64/Ysera-World-of-Warcraft-211082835_(in_Night_Elf_form).jpg/revision/latest?cb=20130527070313
+			document.getElementById("MainImage").src = "images/Music/Ysera.jpg";
 		}
 	}
 }
