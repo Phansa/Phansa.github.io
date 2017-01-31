@@ -15,6 +15,7 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233798320&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/217970408&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233098110&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219805532&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -28,6 +29,7 @@ song_titles.push("٩(｡•́‿•̀｡)۶	We All Fall Down - A-Track ft. Jamie
 song_titles.push("(✿◕﹏◡)~★ Been You - Justin Bieber (✿◕﹏◡)~★");
 song_titles.push("(^=◕ᴥ◕=^) Everything Is Embarassing - Sky Ferreira (^=◕ᴥ◕=^)");
 song_titles.push("(⊃｡•́‿•̀｡)⊃	Tom Swoon, Paris & Simo - Wait");
+song_titles.push("(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄) Zara Larsson - Lush Life (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)");
 function next()
 {
 	if(x < sources.length - 1)
@@ -58,7 +60,13 @@ function prev()
 }
 function random()
 {
+	prev_x = x;
 	x = Math.floor(Math.random() * sources.length);
+	//Prevents the same song from being played twice.
+	while(prev_x !== x)
+	{
+		x = Math.floor(Math.random() * sources.length);
+	}
 	document.getElementById("CurrentSong").src = sources[x];
 	document.getElementById("Song Title").innerText = song_titles[x];
 	change();
@@ -232,6 +240,23 @@ function change()
 		{
 			//Source - http://vignette3.wikia.nocookie.net/wowwiki/images/6/64/Ysera-World-of-Warcraft-211082835_(in_Night_Elf_form).jpg/revision/latest?cb=20130527070313
 			document.getElementById("MainImage").src = "images/Music/Ysera.jpg";
+		}
+	}
+	else if(x == 12)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			document.getElementById("MainImage").src = "images/Music/UmaruChan.jpg";
+		}
+		else if(temp == 2)
+		{
+			//Me IRL
+			document.getElementById("MainImage").src = "http://vignette2.wikia.nocookie.net/himoto-umaruchan/images/4/43/Dd240939d1c800ecb0890e3d3b6c6fc4.jpg/revision/latest?cb=20160206065140";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "images/Music/OniiChan.jpg";
 		}
 	}
 }
