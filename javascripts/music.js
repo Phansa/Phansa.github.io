@@ -263,15 +263,15 @@ function change()
 	}
 	else if(x == 13)
 	{
-		temp = Math.floor(Math.random() * 1);
-		if(temp == 0)
+		temp = Math.floor(Math.random() * 2);
+		if(temp == 1)
 		{
 			//Source - http://overwaifu.net/upload/98945e7ce52f273f40715012b45f1cce.png
 			document.getElementById("MainImage").src = "images/Music/kiddva.png";
 		}
 		else
 		{
-			document.getElementById("MainImage").src = ""
+			document.getElementById("MainImage").src = "https://68.media.tumblr.com/7ee7de45231a6d063865df9b4c6a7669/tumblr_oaoa596WsY1tk3yw3o1_500.jpg";
 		}
 
 	}
