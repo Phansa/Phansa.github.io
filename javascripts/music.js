@@ -65,7 +65,7 @@ function random()
 	prev_x = x;
 	x = Math.floor(Math.random() * sources.length);
 	//Prevents the same song from being played twice.
-	while(prev_x !== x)
+	while(prev_x == x)
 	{
 		x = Math.floor(Math.random() * sources.length);
 	}
