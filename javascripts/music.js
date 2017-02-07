@@ -16,6 +16,7 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/217970408&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233098110&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219805532&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/232439344&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -24,12 +25,13 @@ song_titles.push(".･ﾟﾟ･(／ω＼)･ﾟﾟ･. Lost - Scavenger Hunt (Le
 song_titles.push("(=①ω①=) Cat Cafe - Yoshi & Komono (=①ω①=)");
 song_titles.push("♡＼(￣▽￣)／♡ Begin Again - Purity Ring ♡＼(￣▽￣)／♡");
 song_titles.push("╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ	 Waiting to Ignite - Goldroom ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ");
-song_titles.push("o( ❛ᴗ❛ )o Gregory Esayan - Monday Night (feat. Ai Takekawa) o( ❛ᴗ❛ )o");
+song_titles.push("o( ❛ᴗ❛ )o Monday Night - Gregory Esayan (feat. Ai Takekawa) o( ❛ᴗ❛ )o");
 song_titles.push("٩(｡•́‿•̀｡)۶	We All Fall Down - A-Track ft. Jamie Lidell ٩(｡•́‿•̀｡)۶	");
 song_titles.push("(✿◕﹏◡)~★ Been You - Justin Bieber (✿◕﹏◡)~★");
 song_titles.push("(^=◕ᴥ◕=^) Everything Is Embarassing - Sky Ferreira (^=◕ᴥ◕=^)");
-song_titles.push("(⊃｡•́‿•̀｡)⊃	Tom Swoon, Paris & Simo - Wait");
-song_titles.push("(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄) Zara Larsson - Lush Life (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)");
+song_titles.push("(⊃｡•́‿•̀｡)⊃	Wait - Tom Swoon, Paris & Simo (⊃｡•́‿•̀｡)⊃");
+song_titles.push("(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄) Lush Life - Zara Larsson(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)");
+song_titles.push("(/^-^(^ ^*)/ ♡ Fill Me In - Craig David (/^-^(^ ^*)/ ♡")
 function next()
 {
 	if(x < sources.length - 1)
@@ -258,5 +260,19 @@ function change()
 		{
 			document.getElementById("MainImage").src = "images/Music/OniiChan.jpg";
 		}
+	}
+	else if(x == 13)
+	{
+		temp = Math.floor(Math.random() * 1);
+		if(temp == 0)
+		{
+			//Source - http://overwaifu.net/upload/98945e7ce52f273f40715012b45f1cce.png
+			document.getElementById("MainImage").src = "images/Music/kiddva.png";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = ""
+		}
+
 	}
 }
