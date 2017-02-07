@@ -22,6 +22,14 @@ import xlsxwriter
     #response = requests.get(URL)
     #return response.json()
 
+#Make sure the following packages are installed
+#Pandas, xlsxwriter, requests, xlrd
+#Run these commands to install -
+#pip install requests
+#pip install pandas
+#pip install xlsxwriter
+#pip install xlrd
+
 #Returns a JSON object containing data pertaining to all the champions in the game as well as their skin type
 def getChampionData(region, APIKey):
     URL = "https://" + region + ".api.pvp.net/api/lol/static-data/" + region + "/v1.2/champion" + "?champData=skins&" + "api_key=" + APIKey
@@ -43,7 +51,7 @@ def main():
         #********************Start Program************************
         #Used in my getChampionData function. API Key has been commented out for security reasons.
         region = "na"
-        APIKey = "API KEY"
+        APIKey = "INSERT YOUR KEY HERE"
         #Will store the skins I own read in from an excel worksheet
         skins_list = []
         champion_names = []
@@ -175,16 +183,20 @@ def main():
 <link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css"> 
 </head> 
 <nav> 
-  <ul> 
-    <li><a href="book_reviews.html">Book Reviews</a></li> 
-    <li><a href='gre_vocab.html'>GRE Vocab</a></li> 
-    <li><a href='index.html'>Index</a></li> 
-    <li><a href="league_skins.html">League Skins</a></li> 
-    <li><a href='photos.html'>Photos</a></li> 
-    <li><a href='projects.html'>Projects</a></li> 
-    <li><a href='volunteering.html'>Volunteering</a></li> 
-  </ul> 
-</nav> \n \n""")
+   <ul>
+      <li><a href="book_reviews.html">Book Reviews</a></li>
+      <li><a href="fitch.html"> Fitch </a></li>
+      <li><a href='games.html'>Games</a></li>
+      <li><a href='gre_vocab.html'>GRE Vocab</a></li>
+      <li><a href='index.html'>Index</a></li>
+      <li><a href="league_skins.html">League Skins</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href='photos.html'>Photos</a></li>
+      <li><a href='projects.html'>Projects</a></li>
+      <li><a href='volunteering.html'>Volunteering</a></li>
+    </ul>
+</nav> 
+\n \n""")
         for x in range(0, len(output_url_list)):
             for z in range(0, len(output_url_list[x])):
                 if(z == 0):
