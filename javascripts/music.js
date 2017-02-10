@@ -249,7 +249,7 @@ function change()
 		temp = Math.floor(Math.random() * 3);
 		if(temp == 1)
 		{
-			document.getElementById("MainImage").src = "images/Music/UmaruChan.jpg";
+			document.getElementById("MainImage").src = "images/Music/UmaruChan.JPG";
 		}
 		else if(temp == 2)
 		{
