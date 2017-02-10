@@ -285,7 +285,7 @@ function change()
 		}
 		else
 		{
-			document.getElementById("MainImage").src = "images/Music/PharahMercy3.jpg";
+			document.getElementById("MainImage").src = "images/Music/PharahMercy3.JPG";
 		}
 	}
 }
