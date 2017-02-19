@@ -19,6 +19,7 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/232439344&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/134066335&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211564666&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233998222&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -36,6 +37,7 @@ song_titles.push("(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄) Lush Life - Zara Larsson(⁄ ⁄
 song_titles.push("(/^-^(^ ^*)/ ♡ Fill Me In - Craig David (/^-^(^ ^*)/ ♡");
 song_titles.push("( ◡‿◡ *)	Boyfriend - Justin Bieber ( ◡‿◡ *)");
 song_titles.push("( o˘◡˘o) ┌iii┐ Run Away With Me - Carly Rae Jepsen ( o˘◡˘o) ┌iii┐");
+song_titles.push("☆ﾐ(o*･ω･)ﾉ	kyubae - n33d u ☆ﾐ(o*･ω･)ﾉ");
 function next()
 {
 	if(x < sources.length - 1)
@@ -293,5 +295,25 @@ function change()
 	else if(x == 15)
 	{
 		document.getElementById("MainImage").src = "images/Music/ViolentDVA.jpg";
+	}
+	else if(x == 16)
+	{
+
+		temp = Math.floor(Math.random() * 3);
+		//Source - http://hecoheio.deviantart.com/art/Dangerous-Woman-like-Dva-655382460
+		if(temp == 1)
+		{
+			document.getElementById("MainImage").src = "images/Music/AriannaDVA.jpg";
+		}
+		//Source - http://hecoheio.deviantart.com/art/Mad-Love-658770884
+		else if(temp == 2)
+		{
+			document.getElementById("MainImage").src = "images/Music/EvilDVA.jpg";
+		}
+		//Source - http://hecoheio.deviantart.com/art/YOU-ARE-MINE-659194072
+		else
+		{
+			document.getElementById("MainImage").src = "images/Music/PharahMercyGenji.jpg";
+		}
 	}
 }
