@@ -20,6 +20,8 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/134066335&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211564666&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233998222&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209600622&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214682233&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -37,7 +39,9 @@ song_titles.push("(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄) Lush Life - Zara Larsson(⁄ ⁄
 song_titles.push("(/^-^(^ ^*)/ ♡ Fill Me In - Craig David (/^-^(^ ^*)/ ♡");
 song_titles.push("( ◡‿◡ *)	Boyfriend - Justin Bieber ( ◡‿◡ *)");
 song_titles.push("( o˘◡˘o) ┌iii┐ Run Away With Me - Carly Rae Jepsen ( o˘◡˘o) ┌iii┐");
-song_titles.push("☆ﾐ(o*･ω･)ﾉ	kyubae - n33d u ☆ﾐ(o*･ω･)ﾉ");
+song_titles.push("☆ﾐ(o*･ω･)ﾉ n33d u - kyubae ☆ﾐ(o*･ω･)ﾉ");
+song_titles.push("(→_→)	Miniskirt - AOA (←_←)");
+song_titles.push("ヽ(o´∀`)ﾉ♪♬ Can't Live Without You - Owl City ヽ(o´∀`)ﾉ♪♬");
 function next()
 {
 	if(x < sources.length - 1)
@@ -314,6 +318,34 @@ function change()
 		else
 		{
 			document.getElementById("MainImage").src = "images/Music/PharahMercyGenji.jpg";
+		}
+	}
+	else if(x == 17)
+	{
+		temp = Math.floor(Math.random() * 2);
+		if(temp == 1)
+		{
+			document.getElementById("MainImage").src = "images/Music/DVA_Kawaii.jpg";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "images/Music/DVA_Kawaii2.jpeg";
+		}
+	}
+	else if(x == 18)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			document.getElementById("MainImage").src = "http://orig11.deviantart.net/0a1f/f/2013/174/1/8/fixed_neko_male_by_sweet_flame-d6aa1zr.jpg";
+		}
+		else if(temp == 2)
+		{
+			document.getElementById("MainImage").src = "https://s-media-cache-ak0.pinimg.com/originals/a3/a1/4a/a3a14a447d1fd26b0292d55c5441e92a.jpg";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "http://data.whicdn.com/images/225658831/large.jpg"
 		}
 	}
 }
