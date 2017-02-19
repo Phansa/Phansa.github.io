@@ -292,6 +292,6 @@ function change()
 	}
 	else if(x == 15)
 	{
-		document.getElementById("MainImage").src = "images/Music/ViolentDVA.JPG";
+		document.getElementById("MainImage").src = "images/Music/ViolentDVA.jpg";
 	}
 }
