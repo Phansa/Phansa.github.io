@@ -297,7 +297,7 @@ function change()
 	}
 	else if(x == 14)
 	{
-		temp = Math.floor(Math.random() * 3);
+		temp = Math.floor(Math.random() * 4);
 		if(temp == 1)
 		{
 			document.getElementById("MainImage").src = "images/Music/PharahMercy2.jpg";
@@ -305,6 +305,10 @@ function change()
 		else if(temp == 2)
 		{
 			document.getElementById("MainImage").src = "images/Music/deathparadesad.jpg";
+		}
+		else if(temp == 3)
+		{
+			document.getElementById("MainImage").src = "https://s-media-cache-ak0.pinimg.com/564x/14/91/d0/1491d01e7f6925314fb42db3906b60e9.jpg";
 		}
 		else
 		{
