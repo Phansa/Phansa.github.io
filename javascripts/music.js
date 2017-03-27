@@ -297,10 +297,14 @@ function change()
 	}
 	else if(x == 14)
 	{
-		temp = Math.floor(Math.random() * 2);
+		temp = Math.floor(Math.random() * 3);
 		if(temp == 1)
 		{
 			document.getElementById("MainImage").src = "images/Music/PharahMercy2.jpg";
+		}
+		else if(temp == 2)
+		{
+			document.getElementById("MainImage").src = "images/Music/deathparadesad.jpg";
 		}
 		else
 		{
