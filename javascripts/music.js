@@ -125,8 +125,17 @@ function change()
 	}
 	else if(x == 3)
 	{
-		//Source - http://dazedimg.dazedgroup.netdna-cdn.com/640/azure/dazed-prod/1160/4/1164711.jpg
-		document.getElementById("MainImage").src = "images/Music/yunglean.jpg";
+		temp = Math.floor(Math.random() * 2);
+		if(temp == 1)
+		{
+			//Source - http://dazedimg.dazedgroup.netdna-cdn.com/640/azure/dazed-prod/1160/4/1164711.jpg
+			document.getElementById("MainImage").src = "images/Music/yunglean.jpg";
+		}
+		else
+		{
+			//Source - http://overwaifu.net/upload/8cbc3bee40b5221ad3fcb1d70f673c39.jpg
+			document.getElementById("MainImage").src = "images/Music/WholeHug.jpg";
+		}
 	}
 	else if(x == 4)
 	{
