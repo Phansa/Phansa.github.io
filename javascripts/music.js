@@ -22,6 +22,7 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233998222&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209600622&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214682233&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/276247586&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -42,6 +43,7 @@ song_titles.push("( o˘◡˘o) ┌iii┐ Run Away With Me - Carly Rae Jepsen ( o
 song_titles.push("☆ﾐ(o*･ω･)ﾉ n33d u - kyubae ☆ﾐ(o*･ω･)ﾉ");
 song_titles.push("(→_→)	Miniskirt - AOA (←_←)");
 song_titles.push("ヽ(o´∀`)ﾉ♪♬ Can't Live Without You - Owl City ヽ(o´∀`)ﾉ♪♬");
+song_titles.push("( o˘◡˘o) ┌iii┐ Shadow Man (ft. Saba, Smino & Phoelix) - Noname ( o˘◡˘o) ┌iii┐");
 function next()
 {
 	if(x < sources.length - 1)
@@ -355,6 +357,24 @@ function change()
 		else
 		{
 			document.getElementById("MainImage").src = "http://data.whicdn.com/images/225658831/large.jpg"
+		}
+	}
+	else if(x == 19)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			//Source - http://cdn.playbuzz.com/cdn/1a15dd57-5376-4797-88f4-b412898912a6/22b78326-b662-4199-8a05-ac63ad873419.png
+			document.getElementById("MainImage").src = "images/Music/decim.png";
+		}
+		else if(temp == 2)
+		{
+			//Source - https://img2.goodfon.su/wallpaper/big/1/42/death-parade-art-koncert.jpg
+			document.getElementById("MainImage").src = "images/Music/deathparade.jpg";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "images/Music/MercyBird.jpg";
 		}
 	}
 }
