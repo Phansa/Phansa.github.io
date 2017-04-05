@@ -1,6 +1,6 @@
 function is_valid(input)
 {
-	var re = new RegExp("^[0-9\.]+$");
+	var re = new RegExp("^[-0-9\.]+$");
 	return re.test(input);
 }
 function add()
