@@ -25,6 +25,7 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/276247586&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248047862&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/234235747&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229432516&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -48,6 +49,7 @@ song_titles.push("ヽ(o´∀`)ﾉ♪♬ Can't Live Without You - Owl City ヽ(o�
 song_titles.push("( o˘◡˘o) ┌iii┐ Shadow Man (ft. Saba, Smino & Phoelix) - Noname ( o˘◡˘o) ┌iii┐");
 song_titles.push("⌒(o＾▽＾o)ノ	 Never Enough - Allie X ⌒(o＾▽＾o)ノ");
 song_titles.push("o(>ω<)o Where We Are - Unknown o(>ω<)o");
+song_titles.push("(*＾ω＾)人(＾ω＾*)	 Sad Machine - Porter Robinson - Sad Machine (*＾ω＾)人(＾ω＾*)");
 function next()
 {
 	if(x < sources.length - 1)
@@ -419,6 +421,25 @@ function change()
 		else
 		{
 			document.getElementById("MainImage").src = "images/Music/UmaruJinx.jpg";
+		}
+	}
+	else if(x == 22)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			//Source - http://overwaifu.net/upload/0163ce1af24fe165b49b7bdcded4d747.png
+			document.getElementById("MainImage").src = "images/Music/CasualPharah.png";
+		}
+		else if(temp == 2)
+		{
+			//Source - overwaifu.net/upload/8075f4424f2ea42934240e74532d0924.jpg
+			document.getElementById("MainImage").src = "images/Music/AnaFamily.jpg";
+		}
+		else
+		{
+			//Source - http://overwaifu.net/upload/a2c8f0cc25947acc2bf9fbb5b5ad8342.jpg
+			document.getElementById("MainImage").src = "images/Music/DVA_Dream.jpg";
 		}
 	}
 }
