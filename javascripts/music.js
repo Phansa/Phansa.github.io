@@ -1,5 +1,8 @@
-/*Emoji Website - 
+/*
+Emoji Website - 
 http://kaomoji.ru/en/
+Overwatch Images -
+overwaifu.net
 */
 var x = 0;
 var sources =[];
@@ -33,7 +36,7 @@ song_titles.push("(´• ω •`)ﾉ	 All I Ask - Skrillex Ft. Penny (´• ω �
 song_titles.push(".･ﾟﾟ･(／ω＼)･ﾟﾟ･. Lost - Scavenger Hunt (Lenno Remix) .･ﾟﾟ･(／ω＼)･ﾟﾟ･.");
 song_titles.push("(=①ω①=) Cat Cafe - Yoshi & Komono (=①ω①=)");
 song_titles.push("♡＼(￣▽￣)／♡ Begin Again - Purity Ring ♡＼(￣▽￣)／♡");
-song_titles.push("╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ	 Waiting to Ignite - Goldroom ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ");
+song_titles.push("╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ Waiting to Ignite - Goldroom ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ");
 song_titles.push("o( ❛ᴗ❛ )o Monday Night - Gregory Esayan (feat. Ai Takekawa) o( ❛ᴗ❛ )o");
 song_titles.push("٩(｡•́‿•̀｡)۶	We All Fall Down - A-Track ft. Jamie Lidell ٩(｡•́‿•̀｡)۶	");
 song_titles.push("(✿◕﹏◡)~★ Been You - Justin Bieber (✿◕﹏◡)~★");
@@ -128,6 +131,7 @@ function change()
 		}
 		else
 		{
+			//Mass Effect Squad
 			document.getElementById("MainImage").src = "http://40.media.tumblr.com/95998eb7964ebe7a0c1c14bd0813ebf4/tumblr_nw7kzuIY4B1sk51m7o1_r1_500.jpg";
 		}
 	}
@@ -150,6 +154,7 @@ function change()
 		temp = Math.floor(Math.random() * 2);
 		if(temp == 1)
 		{
+			//Kawaii Rainbow Cat
 			document.getElementById("MainImage").src ="https://s-media-cache-ak0.pinimg.com/originals/d4/e2/85/d4e285ca9d7d65116c42caffca2a7fb9.png";
 		}
 		else
@@ -168,6 +173,7 @@ function change()
 		}
 		else
 		{
+			//Ozymandius
 			document.getElementById("MainImage").src = "http://1.images.spike.com/images/shows/all-access-weekly/Ozymandias.jpg?quality=0.91";
 		}
 
@@ -208,10 +214,12 @@ function change()
 		temp = Math.floor(Math.random() * 4);
 		if(temp == 1)
 		{
+			//Claire De Lune
 			document.getElementById("MainImage").src = "https://images-na.ssl-images-amazon.com/images/I/51nV51JA-pL._SS500.jpg";
 		}
 		else if(temp == 2)
 		{
+			//Thresh Heartseeker Ashe
 			document.getElementById("MainImage").src = "https://s-media-cache-ak0.pinimg.com/236x/96/3c/7f/963c7fafb07063a6188eb860d3c965ee.jpg";
 		}
 		//Source - http://orig10.deviantart.net/669d/f/2016/170/5/f/overwatch__bunny_brigade_by_sangcoon-da6w7hb.png 
@@ -230,6 +238,7 @@ function change()
 		temp = Math.floor(Math.random() * 4);
 		if(temp == 1)
 		{
+			//Dr Manhattan Mars
 			document.getElementById("MainImage").src = "http://media.comicbook.com/2016/05/watchmen-dr--manhattan-hd-wallpapers-184238.jpg";
 		}
 		else if(temp == 2)
@@ -251,10 +260,12 @@ function change()
 		temp = Math.floor(Math.random() * 2);
 		if(temp == 1)
 		{
+			//Before Watchmen Laurie
 			document.getElementById("MainImage").src = "http://68.media.tumblr.com/2e1627dfec4c81264bf6c56b0ff8c646/tumblr_n52m5uyQsp1qba3qpo1_500.png";
 		}
 		else
 		{
+			//Batman Catwoman Kawaii
 			document.getElementById("MainImage").src = "https://s-media-cache-ak0.pinimg.com/736x/0c/70/bf/0c70bffe17bd387cd35d359769da0bd5.jpg";
 		}
 	}
@@ -263,6 +274,7 @@ function change()
 		temp = Math.floor(Math.random() * 2);
 		if(temp == 1)
 		{
+			//My Neighbor Totoro Gif
 			document.getElementById("MainImage").src = "https://secure.static.tumblr.com/9a374cd9a0ca7da0d98f1074c20b40b4/ntg1jvm/p0Lnmvxpy/tumblr_static_tumblr_static__640.gif";
 		}
 		else
@@ -298,6 +310,7 @@ function change()
 		}
 		else
 		{
+			//Lucio DVA ship
 			document.getElementById("MainImage").src = "https://68.media.tumblr.com/7ee7de45231a6d063865df9b4c6a7669/tumblr_oaoa596WsY1tk3yw3o1_500.jpg";
 		}
 	}
@@ -314,6 +327,7 @@ function change()
 		}
 		else if(temp == 3)
 		{
+			//Komaru Kirie Kawaii
 			document.getElementById("MainImage").src = "https://s-media-cache-ak0.pinimg.com/564x/14/91/d0/1491d01e7f6925314fb42db3906b60e9.jpg";
 		}
 		else
@@ -362,14 +376,17 @@ function change()
 		temp = Math.floor(Math.random() * 3);
 		if(temp == 1)
 		{
+			//Male Neko 1 - Blue Heart
 			document.getElementById("MainImage").src = "http://orig11.deviantart.net/0a1f/f/2013/174/1/8/fixed_neko_male_by_sweet_flame-d6aa1zr.jpg";
 		}
 		else if(temp == 2)
 		{
+			//Male Neko 2 - Sun
 			document.getElementById("MainImage").src = "https://s-media-cache-ak0.pinimg.com/originals/a3/a1/4a/a3a14a447d1fd26b0292d55c5441e92a.jpg";
 		}
 		else
 		{
+			//Female Neko 
 			document.getElementById("MainImage").src = "http://data.whicdn.com/images/225658831/large.jpg"
 		}
 	}
@@ -423,6 +440,7 @@ function change()
 			document.getElementById("MainImage").src = "images/Music/UmaruJinx.jpg";
 		}
 	}
+	//Fix Scrolling text display for this page
 	else if(x == 22)
 	{
 		temp = Math.floor(Math.random() * 3);
@@ -442,4 +460,24 @@ function change()
 			document.getElementById("MainImage").src = "images/Music/DVA_Dream.jpg";
 		}
 	}
+
+	//IMAGES TO ADD
+	//Tiny Tina
+	//1 kawaii image
+	//Sombra Fan Art
+	//
+	//FEATURES TO ADD
+	//Autoplay Functionality
+	//Ability to search by song name
+	//Ability to serach by song index
+	//List all song names
+	//Backup songs in case they get taken down from soundcloud
+	//
+	//SONGS TO ADD
+	//1 PC Music Song (probably Hannah Diamond) - https://soundcloud.com/vroomvroomrecordings/paradise-2min-edit-charli-xcx-4416
+	//Hey You - https://soundcloud.com/indieshuffle/tyler-the-creator-toro-y-moi
+	//So Typical - https://soundcloud.com/see-you-swoon/sotypical
+	//Another Night - https://soundcloud.com/cooltweens/another-night
+	//I Love Me - https://soundcloud.com/internetparty/iloveme
+	//All That - https://soundcloud.com/coolteens/all-that
 }
