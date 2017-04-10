@@ -23,6 +23,8 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209600622&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214682233&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/276247586&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248047862&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/234235747&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -44,6 +46,8 @@ song_titles.push("☆ﾐ(o*･ω･)ﾉ n33d u - kyubae ☆ﾐ(o*･ω･)ﾉ");
 song_titles.push("(→_→)	Miniskirt - AOA (←_←)");
 song_titles.push("ヽ(o´∀`)ﾉ♪♬ Can't Live Without You - Owl City ヽ(o´∀`)ﾉ♪♬");
 song_titles.push("( o˘◡˘o) ┌iii┐ Shadow Man (ft. Saba, Smino & Phoelix) - Noname ( o˘◡˘o) ┌iii┐");
+song_titles.push("⌒(o＾▽＾o)ノ	 Never Enough - Allie X ⌒(o＾▽＾o)ノ");
+song_titles.push("o(>ω<)o Where We Are - Unknown o(>ω<)o");
 function next()
 {
 	if(x < sources.length - 1)
@@ -383,6 +387,38 @@ function change()
 		else
 		{
 			document.getElementById("MainImage").src = "images/Music/MercyBird.jpg";
+		}
+	}
+	else if(x == 20)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			document.getElementById("MainImage").src = "images/Music/LeagueOTP.jpg";
+		}
+		else if(temp == 2)
+		{
+			document.getElementById("MainImage").src = "images/Music/DocMercy.jpg";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "images/Music/LunarKawaii.jpg";
+		}
+	}
+	else if(x == 21)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			document.getElementById("MainImage").src = "images/Music/UmaruAnnie.jpg";
+		}
+		else if(temp == 2)
+		{
+			document.getElementById("MainImage").src = "images/Music/UmaruKat.jpg";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "images/Music/UmaruJinx.jpg";
 		}
 	}
 }
