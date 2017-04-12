@@ -52,7 +52,7 @@ song_titles.push("ヽ(o´∀`)ﾉ♪♬ Can't Live Without You - Owl City ヽ(o�
 song_titles.push("( o˘◡˘o) ┌iii┐ Shadow Man (ft. Saba, Smino & Phoelix) - Noname ( o˘◡˘o) ┌iii┐");
 song_titles.push("⌒(o＾▽＾o)ノ	 Never Enough - Allie X ⌒(o＾▽＾o)ノ");
 song_titles.push("o(>ω<)o Where We Are - Unknown o(>ω<)o");
-song_titles.push("(*＾ω＾)人(＾ω＾*)	 Sad Machine - Porter Robinson - Sad Machine (*＾ω＾)人(＾ω＾*)");
+song_titles.push("(*＾ω＾)人(＾ω＾*) Sad Machine - Porter Robinson (*＾ω＾)人(＾ω＾*)");
 function next()
 {
 	if(x < sources.length - 1)
@@ -480,4 +480,7 @@ function change()
 	//Another Night - https://soundcloud.com/cooltweens/another-night
 	//I Love Me - https://soundcloud.com/internetparty/iloveme
 	//All That - https://soundcloud.com/coolteens/all-that
+	//After Midnight - https://soundcloud.com/norcalnxc/aft3r-midnight-kittynxc	
+	//There 4 u - https://soundcloud.com/kittynxc/there-4-u
+	//Tori No Uta - https://soundcloud.com/slugabed/tori-no-uta
 }
