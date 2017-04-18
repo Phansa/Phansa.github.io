@@ -29,6 +29,8 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248047862&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/234235747&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229432516&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
+//TO ADD
+//sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/152774056&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -483,4 +485,5 @@ function change()
 	//After Midnight - https://soundcloud.com/norcalnxc/aft3r-midnight-kittynxc	
 	//There 4 u - https://soundcloud.com/kittynxc/there-4-u
 	//Tori No Uta - https://soundcloud.com/slugabed/tori-no-uta
+	//Beautiful - https://soundcloud.com/pcmus/beautiful
 }
