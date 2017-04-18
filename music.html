@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css"> -->
 		<link rel="stylesheet" type="text/css" href="stylesheets/core.css">
 		<script type="text/javascript" src="javascripts/music.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script src="javascripts/bootstrap.min.js"></script>
+    	<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
 		<style>
 			div{
 				text-align: center;
@@ -46,37 +54,51 @@
 			 }
 			}
 		</style>
-	    <nav>
-		   <ul>
-		      <li><a href="book_reviews.html">Book Reviews</a></li>
-		      <li><a href="fitch.html"> Fitch </a></li>
-		      <li><a href='games.html'>Games</a></li>
-		      <li><a href='gre_vocab.html'>GRE Vocab</a></li>
-		      <li><a href='index.html'>Index</a></li>
-		      <li><a href="league_skins.html">League Skins</a></li>
-		      <li><a href="music.html">Music</a></li>
-		      <li><a href='photos.html'>Photos</a></li>
-		      <li><a href='projects.html'>Projects</a></li>
-		      <li><a href='volunteering.html'>Volunteering</a></li>
-		    </ul>	
-    	</nav>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Pages</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="book_reviews.html">Book Reviews</a></li>
+					<li><a href='games.html'>Games</a></li>
+					<li><a href='gre_vocab.html'>GRE Vocab</a></li>
+					<li><a href="league_skins.html">League Skins</a></li>
+					<li><a href="music.html">Music</a></li>
+					<li><a href='photos.html'>Photos</a></li>
+					<li><a href='projects.html'>Projects</a></li>
+					<li><a href='volunteering.html'>Volunteering</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	</head>
 	<br />
-	<div>
-		<h3 id="Song Title"> (^-^*)/ Welcome to Kawaii Radio! Enjoy your stay! (^-^*)/</h3>
-	</div>
-	<br />
-	<br />
-	<br />
-	<div>
-		<img src="images/Music/djpon3.gif" id="MainImage">
-		<!-- ALT display <iframe id="CurrentSong" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
-		<iframe id="CurrentSong" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-	</div>
-	<div>
-			<button onclick="prev()">Prev</button>
-		    <button onclick="next()">Next</button>
-		    <button onclick="random()">Random</button>
+    <div class="starter-template">
+		<div>
+			<h3 id="Song Title"> (^-^*)/ Welcome to Kawaii Radio! Enjoy your stay! (^-^*)/</h3>
+		</div>
+		<br />
+		<br />
+		<br />
+		<div>
+			<img src="images/Music/djpon3.gif" id="MainImage">
+			<!-- ALT display <iframe id="CurrentSong" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
+			<iframe id="CurrentSong" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		</div>
+		<div>
+				<button onclick="prev()">Prev</button>
+			    <button onclick="next()">Next</button>
+			    <button onclick="random()">Random</button>
+	    </div>
     </div>
     <!-- <p> Image Sources
     https://s-media-cache-ak0.pinimg.com/originals/ed/a6/70/eda6700e680821682889ac2fdc1c2688.gif - DJ Pon3 gif
