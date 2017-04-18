@@ -1,101 +1,94 @@
 <!DOCTYPE html>
 <html>
 	<head>
- 		<style>
- 			h1
- 			{
- 				font-size: 20pt;
- 				text-align: center;
- 			}
- 			h2
- 			{
- 				font-size: 20pt;
- 				text-align: center;
- 			}
+	 	<link rel="stylesheet" type="text/css" href="stylesheets/core.css">
+ 		<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css">
+ 		<style> 		
  			h3
  			{
- 				font-size: 16pt;
+ 				text-align: left;
  				font-weight: bold;
  				margin: 0;
  				padding: 0;
- 			}
- 			p
- 			{
- 				font-size: 16pt;
- 				margin: 0;
- 				padding: 0;
- 			}
-		    nav 
-		    {
-		      background-color: black;
-		      height: 50px;
-		    }
-		    nav ul
-		    {
-		      list-style; none;
-		      padding: 0;
-		      margin: 0;
-		    }
-		    nav ul li 
-		    {
-		      list-style-type: none;
-		      width: 150px;
-		      float: left;
-		      display: block;
-		      border-radius: 1px solid #CCC;
-		      text-align: center;
-		      font-size: 16pt;
-		    }
-		    li a 
-		    {
-		      text-decoration: none;
-		      color: white;
-		      line-height: 50px;
-		    }
-		    li a:hover
-		    {
-		      background-color: yellow;
-		      color: green;
-		    }
-		    div 
-		    {
-		      text-align: center;
-		    }
+ 			} 	
 		</style>
 	</head>
 	<nav>
-	  <ul>
-	  	<li><a href="book_reviews.html">Book Reviews</a></li>
-	    <li><a href='index.html'>Index</a></li>
-	    <li><a href='gre_vocab.html'>GRE Vocab</a></li>
-	    <li><a href='photos.html'>Photos</a></li>
-	     <li><a href='projects.html'>Projects</a></li>
-	    <li><a href='volunteering.html'>Volunteering</a></li>
-	  </ul>
+	   <ul>
+	      <li><a href="book_reviews.html">Book Reviews</a></li>
+	      <li><a href="fitch.html"> Fitch </a></li>
+	      <li><a href='games.html'>Games</a></li>
+	      <li><a href='gre_vocab.html'>GRE Vocab</a></li>
+	      <li><a href='index.html'>Index</a></li>
+	      <li><a href="league_skins.html">League Skins</a></li>
+	      <li><a href="music.html">Music</a></li>
+	      <li><a href='photos.html'>Photos</a></li>
+	      <li><a href='projects.html'>Projects</a></li>
+	      <li><a href='volunteering.html'>Volunteering</a></li>
+	    </ul>
 	</nav>
 	<h1> IFMP Database Application </h1>
-	<p> I was asked to create this application in the summer of 2015 in order to help this
-	nonprofit organization keep track of its members. I wrote this application in VB.Net
+	<p> I was asked to create this application in the summer of 2015 in order to help a
+	nonprofit organization <a href="http://www.ifmpnj.org/"> India Foundation of Metropolitan 
+	Princeton </a> keep track of its members. I wrote this application in VB.Net
 	and it access a MSSQL database. This project taught me a lot about meeting 
 	specifications and how to create a UI that would be intuitive and simple to use for
-	the user. Up until this project, I was mostly coding things that used the command 
-	line only so creating a GUI was a good learning experience. I will outline some
-	of the features of this program here.
+	the user. Up until this project I was mostly coding things that used the command 
+	line, so creating a GUI was a good learning experience. 
+	</p>
+	<p>
+	IFMP needed a more efficient way to store and access their members list compared to 
+	the method they were using at the time which was to collaborate the membership 
+	information collected by multiple people into an excel spreadsheet that had to be 
+	maintained manually. This was important because members had to pay annual dues and 
+	having an outdated membership list could cause a lot of problems or people could say 
+	they had paid when they really hadn’t, but if the membership list wasn’t current they 
+	would be let in. To solve this problem I created a MSSQL database to store information 
+	about each member such as First Name, Last Name, Phone Number, Family Size (membership 
+	would cost different amounts based on this), Address etc. Using a VB.Net front end 
+	users can access this database and easily lookup members by name, last name or an ID 
+	Column field then easily update the information of the member and send those updates 
+	back to the database, no excel sheets involved! 
+	</p>
+	<p>Working on this project taught me a lot about software design and development as 
+	well as testing and debugging. I had only worked on assignments in my classes which 
+	required the command line and had never made a GUI/Front end to any of the work I had 
+	done. It was a great learning experience to develop the user interface that would make 
+	it easy for someone to interact with my code and it also was something I had not done 
+	before this project. I also learned some basic SQL from this project as well as how to 
+	send emails from this application to certain members based on criteria ( for example 
+	sending an email to everyone who was inactive asking them to renew their membership). 
+	I still do work on it today if the organization needs new features added although for 
+	the most part the application is complete.
+	<br />
+	I will outline some	of the features of this program below. The features listed below 
+	are not all the features of the project because I am still working on documenting them. 
+	Some features also include the ability to save the contents	of the membership table to 
+	an excel sheet, send emails using SMTP/Gmail/EAGetMail to members in the database using 
+	the email address field	based upon certain criteria (IE if they are members are nonmembers) 
+	and resizable mode (two options 1080 x 720 and 1548 x 825). I will get around to documenting 
+	all the features of the application.
+	</p>
 	<br />
 	<img src="images/IFMP Database App/Login.png">
 	<br />
-	This is the basic login Screen. You can log onto this application as either a user or
-	and administrator.
+	<p>
+	This is the basic login screen. You can log onto this application as either a user or
+	an administrator.
+	</p>
 	<br />
 	<img src="images/IFMP Database App/Login2.png">
 	<br />
+	<p>
 	This is the screen that allows you to log into the database. You will need to have
-	your IP added to a list of IP's allowed to access the database before you can use 
-	this application however. If your ip isn't on that list then you cannot proceed 
-	further.
+	your IP address added to a list of IP's addressed allowed to access the database before 
+	you can use this application. If your IP address isn't on that list then you cannot 
+	proceed	further.
+	</p>
 	<br />
 	<img src="images/IFMP Database App/MainUI1.png">
 	<br />
+	<p>
 	This is the main user interface. It contains many features that I will go over. For
 	demonstration purposes I have excluded all actual members and am just using fake
 	members I created named test one and test two. A feature of this application is the 
@@ -114,24 +107,106 @@
 	<br />
 	<p>
 	A user may click on the ID column of any member and autofill the textboxes with the
-	data stored in the database corresponding to that member.
+	data stored in the database corresponding to that member. </p>
 	<br />
-	<img src="images/IFMP Database App/Id Complete.gif">
+	<img src="images/IFMP Database App/ID Complete.gif">
 	<br />
+	<p>
 	A user may fill in textboxes then press update in order to update the information
-	stored in the database. 
+	stored in the database. </p>
 	<br />
 	<img src="images/IFMP Database App/Update_Example.gif">
 	<br />
+	<h3> Add Member </h3>
+	<p>
+	This is the Add Member interface. ID Number is filled in automatically by checking the existing
+	ID's and adding + to previous highest number. Default Event/Payment/Channel are filled in automatically
+	by reading in from the settings table. The user must enter a First/Last name for each member as well as
+	an email address. 
 	</p>
-	<h2> Pokemon Snowdown Project </h2>
+	<br />
+	<img src="Images/IFMP Database App/Add Member.png">
+	<br />
+	<img src="Images/IFMP Database App/AddMember_Restriction.gif">
+	<br />
+	<img src="Images/IFMP Database App/AddMember_EmailRestrict.gif">
+	<br />
+	<p>
+	When all fields have been filled out as desired, a Welcome Email will be sent to the member containing
+	information about the Organization and their membership ID/information we have stored about them in
+	the database. This is doing using SMTPServer and Gmail. 
+	</p>
+	<br />
+	<img src="Images/IFMP Database App/Welcome Email.png">
+	<br />
+	<h3> Tables </h3>
+	<p>
+	The main table being used is called membership. 
+	The defaults table is used to store default values for event/channel/payment method that will be
+	autofilled when add member is called. The user can press menu->settings->set default event/channel/payment. 
+	The defaults table will then be updated with the currently selected value for any of these three combo boxes. </p>
+	<h3> Default Table Structure </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/DefaultsTable.png">
+	<br />
+	<h3> Setting Default Event </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/SetDefaultEvent.gif">
+	<br />
+	<p>
+	The values that can be chosen are based off three other tables,
+	Events/Channels/PaymentMethods. Each of these tables contain one field (Events/Channels/PaymentMethods) which are primary key and are sorted in ascneding order.
+	Below is an example of the event table, however the Channel and Payment tables are the same. 
+	</p>
+	<h3> Event Table Structure </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/EventsTable.png">
+	<br />
+	<h3> Event Table Contents </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/EventsTableContents.png">
+	<br />
+	<p> The following code will initalize the EventBox combo box based on the contents of the Events Table. Of course, the same
+	method is called to initialize the Payment/Channel combo boxes. </p>
+	<br />
+	<img src="images/IFMP Database App/Tables/InitializeEventBox.png">
+	<br />
+	<p>	When the application loads or add member is called, the following code will execute to find the current default values
+	for the Event/Payment/Channel boxes and set the value to the defaults. For Payment/Channel, the select statement is just
+	select [Default Payment] / [Default Channel] </p>
+	<br />
+	<img src="images/IFMP Database App/Tables/SetDefaultEventBox.png">
+	<br />
+	<h3> Below you find the structure of the tables used in my application </h3>	
+	<h3> Membership Table </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/Membership Table.png">
+	<br />
+	<h3> Child Table </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/ChildTable.png">
+	<br />
+	<h3> Channel Table </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/ChannelTable.png">
+	<br />
+	<h3> PaymentMethod Table </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/PaymentMethodTable.png">
+	<br />
+	<h3> Default Table </h3>
+	<br />
+	<img src="images/IFMP Database App/Tables/Defaults Table.png">
+	<br />
+	<h1> Pokemon Snowdown Project </h1>
 	<p>
 	I worked on this project as part of one of my classes, Introduction to Open Source, 
-	and continued working on it beyond that class. The project can be found
-	<a href="https://github.com/Phansa/PokeSnowdown"> here</a>.
+	and continued working on it beyond that class. <a href="https://github.com/Phansa/PokeSnowdown/blob/master/Documentation/CSCI-2963-01/PokeSnowdown_Presentation_FINAL.pdf"> Here </a> is a nice 
+	presentation on what we	contributed to this project as part of that class. 
+	The project can be found <a href="https://github.com/Phansa/PokeSnowdown"> here</a>.
 	I created the <a href="https://github.com/Phansa/PokeSnowdown/wiki">wiki</a> for this 
 	project documenting the features of the game as well
-	as how to isntall the game. I would like more people to contribute to this project
+	as how to install the game. I would like more people to contribute to this project
 	if possible, so I added some pages on how people can get involved. This is a Pokemon 
 	battle simulator written in OCaml that requires a linux machine/virtual machine
 	to run. Here are some images of what the game interface looks like.
@@ -144,66 +219,291 @@
 	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/Documentation/Wiki-Guide-Images/Game-Guide/No-Player-Mode/No%20Player%20Overview.png>
 	<br />
 	<p> Here are all the trainers currently in the game! </p>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/angela.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/baldman.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/beastboy.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/beauty.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/bob.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/batman.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/bugcatcher.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/campernerd.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/dan.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/dragontamer.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/falkner.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/fatman.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/freddrick.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/freiza.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/goku.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/hinata.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/honorable.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/j-sean.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/kyle.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/neji_hyuga.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/pope.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/professoroak.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/psychic.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/reaper.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/sakura.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/spongebob.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/squidward.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/suzie.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/yamcha.gif>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/youngster.gif>
+	<!--*******************************************************************************************************************
+	***************************************Portrait Images*****************************************************************
+	***********************************************************************************************************************
+	-->	
+	<a href="https://github.com/Phansa/PokeSnowdown/wiki/Angela">
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/angela.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Baldman>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/baldman.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Beast-Boy>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/beastboy.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Beauty>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/beauty.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Bob>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/bob.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Bruce-Wayne-(Batman)>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/batman.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Bug-Catcher>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/bugcatcher.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Camper-Nerd>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/campernerd.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Dan>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/dan.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Dragon-Tamer>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/dragontamer.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Falkner>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/falkner.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Fatman>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/fatman.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Freddrick>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/freddrick.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Freiza>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/freiza.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Goku>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/goku.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Hinata-Hyuga>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/hinata.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/The-Honorable>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/honorable.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Jsean>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/j-sean.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Kyle>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/kyle.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Neji-Hyuga>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/neji_hyuga.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Pope>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/pope.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Professor-Oak>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/professoroak.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Psychic>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/psychic.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Reaper>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/reaper.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Sakura>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/sakura.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Spongebob-Squarepants>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/spongebob.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Squidward-Tentacles>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/squidward.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Suzie>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/suzie.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Yamcha>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/yamcha.gif>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Youngster>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/backgrounds/player_versus/youngster.gif>
+	</a>
+	<!--*******************************************************************************************************************
+	***************************************Sprite images*******************************************************************
+	***********************************************************************************************************************
+	-->
 	<br />
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/angela.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/baldman.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/beastboy.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/beauty.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/bob.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/batman.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/bugcatcher.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/campernerd.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/dan.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/dragontamer.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/falkner.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/fatman.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/freddrick.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/freiza.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/goku.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/hinata.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/honorable.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/j-sean.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/kyle.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/neji_hyuga.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/pope.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/ProfOak.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/psychic.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/reaper.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/sakura.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/spongebob.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/squidward.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/suzie.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/yamcha.png>
-	<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/youngster.png>
-
+	<a href="https://github.com/Phansa/PokeSnowdown/wiki/Angela">
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/angela.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Baldman>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/baldman.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Beast-Boy>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/beastboy.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Beauty>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/beauty.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Bob>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/bob.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Bruce-Wayne-(Batman)>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/batman.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Bug-Catcher>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/bugcatcher.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Camper-Nerd>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/campernerd.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Dan>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/dan.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Dragon-Tamer>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/dragontamer.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Falkner>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/falkner.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Fatman>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/fatman.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Freddrick>	
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/freddrick.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Freiza>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/freiza.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Goku>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/goku.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Hinata-Hyuga>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/hinata.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/The-Honorable>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/honorable.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Jsean>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/j-sean.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Kyle>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/kyle.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Neji-Hyuga>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/neji_hyuga.png>
+	</a>	
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Pope>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/pope.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Professor-Oak>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/ProfOak.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Psychic>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/psychic.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Reaper>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/reaper.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Sakura>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/sakura.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Spongebob-Squarepants>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/spongebob.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Squidward-Tentacles>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/squidward.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Suzie>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/suzie.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Yamcha>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/yamcha.png>
+	</a>
+	<a href=https://github.com/Phansa/PokeSnowdown/wiki/Youngster>
+		<img src=https://raw.githubusercontent.com/Phansa/PokeSnowdown/master/data/tournament/NPC/youngster.png>
+	</a>
+	<h3> Pokemon Snowdown Gameplay Video (Please play at 1080p quality or the highest you can support) </h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ACxjcFc824A" frameborder="0" allowfullscreen></iframe>
+	<h1> Riot Games API Project </h1>
+	<p> I had created an Excel spreadsheet of all of the League of Legends skins I owned and
+	wanted a way to visually display them somehow. Skins in League of Legends are 
+	customizations that change the way certain characters look in game that are purchaseable for
+	money. There isn't really a method built-in into the game to see all of the skins you 
+	currently own. I decided to manually go through each champion(character in the game) I
+	owned and look through the skins I had for them and record them into an Excel 
+	spreadsheet so I knew what I owned. I wanted to learn how to use the Riot API,
+	so I figured I may as well make a program to read the skins I own and generate 
+	an HTML page containing the artwork of each skin. The source code for this
+	program can be be found <a href="https://github.com/Phansa/Phansa.github.io/blob/master/main.py"> here
+	</a>.
+	I used a template program from a Youtube video I found in order understand how the the API
+	worked first, then started working on what I wanted to do. Part of this program reads
+	an Excel spreadsheet in as input and outputs a result Excel spreadsheet. This was 
+	necessary because when accessing the API I used an exact string match to find out
+	if I owned a champion skin, but in my own Excel spreadsheet I had only written the
+	first part of a skin name (for example Frostfire Annie was just Frostfire) and thus
+	I needed to append the second part(the champion name) to multiple cells in my source excel spreadsheet.
+	Instead of doing this manually, I did it programatically and afterwards double checked
+	to remove some unncessary additions (for example Snowmerdinger is the correct string and
+	Snowmerdinger Heimerdinger is the incorrect string so I had to fix these cases). Then reading
+	in my new Excel spreadsheet, I looped through each champion in the JSON response file 
+	then each skins	field of each champion to find out the unique number associated with each skin.
+	This number is used to in the image urls to identify which skin is which, so 
+	for example Justicar Aatrox is the number 1
+	<a href="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_1.jpg">
+	http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_1.jpg" </a>
+	and the default Aatrox skin is the number 0
+	<a href="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg">
+	http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg </a>.
+	These URLS are saved into a list that I write to my output HTML file at the very end.
+	I use insertion sort to make sure this list in alphabetical order. </p>
+	<p>I can expand upon this project in two ways, first would be to style the HTML page
+	/ make it more interesting. Second I could make a program that would generate the Skins
+	Excel spreadsheet using data from a user's League of Legends client (as that is the place
+	where the skin data is stored) and then use that generated Excel spreadsheet to make
+	an HTML page and host it on my website. Another option would be to create
+	a webform people can fill out containing all skins in the game then use the response to
+	make an Excel spreadsheet, run my HTML generating program locally, then finally
+	upload the page to my website/send the person who submitted the URL a link to their
+	very own skins page. This method requires that the user will go through all the champions
+	/skins they own however so it's more time consuming than being able to access the information
+	directly from their client, however it requires less from a user because they wouldn't have to 
+	install an application/can do it all from the web. This would be a valuable service to 
+	the League of Legends community	as currently there isn't a very intuitive way to see 
+	all the skins you have owned at once and I look forward to working on it some more
+	<br />
+	<a href="league_skins.html"> League Skins Page </a>
+	</p>
+	<h1> Data Structures and Algorithms </h1>
+	<p> These are programs I have written to practice various Data Structures and
+	Algorithms concepts. They can be found on my Github <a href="https://github.com/Phansa/Data-Structures-Algorithms-Practice"> here </a>. There are also
+	solutions to various Hackerank/Leetcode problems I have solved in my free time.
+	</p>
+	<h1> Open Source </h1>
+	<p> I have worked a lot with the Open Source community, both in being an undergraduate programming
+	mentor for the class Introduction to Open Source at RPI as well as contributing to external open source projects.
+	Notably I created a <a href="https://github.com/rcos/CSCI2963-01-Spring2017/blob/master/Spring2017StudyGuide.md"> study guide </a> to
+	help students with Quiz 1. </p>
+	<p>
+	I have made contributions to the open source project LEGUP - a logic helper/puzzle software. I was taken an Introduction to Logic class
+	and had to use this software and noticed it was on Github and had an issue I felt I could work on, changing the 
+	background of the tile squares so that they could be clearly distinguishable from the lighted up squares
+	for a light up puzzle game (<a href="https://github.com/Bram28/LEGUP/issues/78"> issue </a>). After looking through the codebase and
+	trying to understand what files to change, I was able to implement this feature and get my code
+	merged back into the master branch <a href="https://github.com/Bram28/LEGUP/commits?author=Phansa">(contributions)</a>.
+	</p>
+	<p>
+	As part of the Rensselaer Center for Open Source I worked on ZNC Self Message modules , info can be found <a href="https://rcos.io/projects/zwimer/mutable-client-buffer/profile"> here </a>.
+	</p>
+	<p>
+	I also have contributed to the ZNC <a href="https://github.com/znc/znc"> repository </a> helping with some documentation so that
+	other developers could have an easier time.
+	<br />
+	<a href="https://github.com/znc/znc/pull/1380"> Pull Request 1 </a>
+	<br />
+	<a href="https://github.com/znc/znc/pull/1383"> Pull Request 2 </a>
+	</p>
+	<h1> Hearthstone Hero Power Simulator </h1>
+	<p> I am currently working on a Hearthstone Hero Power simulator. Hearthstone is an online card game
+	where players create their own decks and play against each other (more info <a href="http://hearthstone.gamepedia.com/Gameplay"> here </a>. 
+	The premise of this project is simulate a Hearthstone match where both players only use their hero power on each turn available. I quickly realized I could apply the Factory design pattern using an abstract Class represents the Hero class (In Hearthstone players choose 1 of 9 heroes each with a different hero power). Once I finish the main design I would like to either learn and use QT to give it a GUI or use another
+	programming langauge to provide some sort of UI. Additionally I would like to implement the simulator in multiple languages just to get
+	more experience with OOP. I also have implemented a CMake file in order to link everything toghether easier which is something I had
+	learned abbout in Introduction to Open Source but never really used until now.
+	<br />
+	Project can be found <a href="https://github.com/Phansa/HearthstoneBasicPowerSimulator"> here </a>.
+	</p>
+	<h1> This Website! </h1>
+	<p> This website reflects my efforts to learn HTML/CSS. I started from the Github Pages template and am using basic
+	HTML/CSS right now as I am getting more comfortable with how things works. I intend to switch to using a framework (mostly likely
+	Boostrap) and making the website mobile friendly, but I am pursuing other projects as of now so it may be a while. I wanted to first
+	work on making content/exploring what could be done on a website before trying to make it "pretty" and as of now (March 2017) and I 
+	still working on the content part.
+	</p>
 </html>

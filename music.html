@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/core.css">
+		<script type="text/javascript" src="javascripts/music.js"></script>
+		<style>
+			div{
+				text-align: center;
+			}
+			/* Code taken from - http://www.quackit.com/html/html_editors/scratchpad/?example=/css/codes/marquees/scrolling_text */
+			h3 {
+			 pointer-events: none;
+			 font-size: 3em;
+			 color: limegreen;
+			 position: absolute;
+			 width: 100%;
+			 height: 100%;
+			 margin: 0;
+			 line-height: 50px;
+			 text-align: center;
+			 -webkit-transform:translateX(100%);	
+			 transform:translateX(100%);
+			 -moz-animation: example1 30s linear infinite;
+			 -webkit-animation: example1 30s linear infinite;
+			 animation: example1 30s linear infinite;
+			}
+			@-moz-keyframes example1 {
+			 0%   { -moz-transform: translateX(100%); }
+			 100% { -moz-transform: translateX(-100%); }
+			}
+			@-webkit-keyframes example1 {
+			 0%   { -webkit-transform: translateX(100%); }
+			 100% { -webkit-transform: translateX(-100%); }
+			}
+			@keyframes example1 {
+			 0%   { 
+			 -moz-transform: translateX(100%); /* Firefox bug fix */
+			 -webkit-transform: translateX(100%); /* Firefox bug fix */
+			 transform: translateX(100%); 		
+			 }
+			 100% { 
+			 -moz-transform: translateX(-100%); /* Firefox bug fix */
+			 -webkit-transform: translateX(-100%); /* Firefox bug fix */
+			 transform: translateX(-100%); 
+			 }
+			}
+		</style>
+	    <nav>
+		   <ul>
+		      <li><a href="book_reviews.html">Book Reviews</a></li>
+		      <li><a href="fitch.html"> Fitch </a></li>
+		      <li><a href='games.html'>Games</a></li>
+		      <li><a href='gre_vocab.html'>GRE Vocab</a></li>
+		      <li><a href='index.html'>Index</a></li>
+		      <li><a href="league_skins.html">League Skins</a></li>
+		      <li><a href="music.html">Music</a></li>
+		      <li><a href='photos.html'>Photos</a></li>
+		      <li><a href='projects.html'>Projects</a></li>
+		      <li><a href='volunteering.html'>Volunteering</a></li>
+		    </ul>	
+    	</nav>
+	</head>
+	<br />
+	<div>
+		<h3 id="Song Title"> (^-^*)/ Welcome to Kawaii Radio! Enjoy your stay! (^-^*)/</h3>
+	</div>
+	<br />
+	<br />
+	<br />
+	<div>
+		<img src="images/Music/djpon3.gif" id="MainImage">
+		<!-- ALT display <iframe id="CurrentSong" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
+		<iframe id="CurrentSong" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	</div>
+	<div>
+			<button onclick="prev()">Prev</button>
+		    <button onclick="next()">Next</button>
+		    <button onclick="random()">Random</button>
+    </div>
+    <!-- <p> Image Sources
+    https://s-media-cache-ak0.pinimg.com/originals/ed/a6/70/eda6700e680821682889ac2fdc1c2688.gif - DJ Pon3 gif
+    https://s-media-cache-ak0.pinimg.com/564x/1c/e8/52/1ce852cae4b548e6bf99da0a8fb9f833.jpg - Fionna
+    -->
+</html>
