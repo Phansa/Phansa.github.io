@@ -182,7 +182,7 @@ function change()
 	}
 	else if(x == 6)
 	{
-		temp = Math.floor(Math.random() * 3);
+		temp = Math.floor(Math.random() * 4);
 		if(temp == 1)
 		{
 			//Source http://static.zerochan.net/Litten.full.1999835.jpg
@@ -192,6 +192,11 @@ function change()
 		{
 			//Source http://pre09.deviantart.net/06a1/th/pre/f/2016/131/e/6/litten_by_hikariviny-da253cu.png
 			document.getElementById("MainImage").src = "images/Music/litten2.png";
+		}
+		else if(temp == 3)
+		{
+			//Source - https://68.media.tumblr.com/f38eba29e940e930d97f386da6e51895/tumblr_o78h4yLW4V1ucwfuvo1_1280.gif
+			document.getElementById("MainImage").src = "images/Music/litten_gif.gif";
 		}
 		else
 		{
