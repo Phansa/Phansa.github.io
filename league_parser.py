@@ -199,11 +199,11 @@ def main():
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="book_reviews.html">Book Reviews</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fitch.html">Fitch</a></li>
           <li><a href='games.html'>Games</a></li>
           <li><a href='gre_vocab.html'>GRE Vocab</a></li>
-          <li><a href="league_skins.html">League Skins</a></li>
+          <li class="active"><a href="league_skins.html">League Skins</a></li>
           <li><a href="music.html">Music</a></li>
           <li><a href='photos.html'>Photos</a></li>
           <li><a href='projects.html'>Projects</a></li>
