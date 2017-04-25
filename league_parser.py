@@ -51,7 +51,7 @@ def main():
         #********************Start Program************************
         #Used in my getChampionData function. API Key has been commented out for security reasons.
         region = "na"
-        APIKey = "INSERT YOUR KEY HERE"
+        APIKey = "INSERT API KEY HERE"
         #Will store the skins I own read in from an excel worksheet
         skins_list = []
         champion_names = []
@@ -65,7 +65,7 @@ def main():
         output_url_list = [[]]
         #Reading in the excel file, removing all NaN/empty cell values and replacing them with empty string
         #spreadsheet = raw_input("Please enter an excel file name: ")
-        df = pandas.read_excel('test.xlsx')
+        df = pandas.read_excel('LeagueSkins.xlsx')
         df = df.replace(np.nan,' ', regex=True)
         values = df['Champion'].index
         champ_name = ""
@@ -90,7 +90,6 @@ def main():
         #This list will be used to remove skins as they are found to reduce the run time 
         list_to_be_removed = []
         #Loops through each champion form the JSON object
-        print(output_url_list)
         index_to_insert = 0;
         bool_found = False
         for x in range (0, len(champion_names)):
@@ -115,15 +114,14 @@ def main():
                     output_url_list.append(output_url_initialize_list)
                 else:
                     output_url_list.insert(index_to_insert, output_url_initialize_list)
-            #if(x < 2):
-                #print(output_url_list)
-            list = test['data'][champion_names[x]]['skins']
-            for y in range(0, len(list)):
+            #Loops through all for a specific champion and skins from my input list
+            master_skin_list = test['data'][champion_names[x]]['skins']
+            for y in range(0, len(master_skin_list)):
                 for z in range(0, len(skins_list)):
                     #Checks to see if this champion has any skins that I own, and if yes appends the url to
                     #my output_url list as well as puts the skin in the to be removed list.
-                    if(skins_list[z] == list[y]['name']):
-                        output_url_list[index_to_insert].append("<img src=" + skin_url + champion_names[x] + '_' + str(list[y]['num']) + ".jpg" + ">")
+                    if(skins_list[z] == master_skin_list[y]['name']):
+                        output_url_list[index_to_insert].append("<img src=" + skin_url + champion_names[x] + '_' + str(master_skin_list[y]['num']) + ".jpg" + ">")
             bool_found = False
             #if(x < 3):
                 #print(list)
@@ -164,7 +162,7 @@ def main():
         #check above I needed the exact skin name so this function takes the first spreadsheet I made and appends the
         #champion name after it. Of course for some skins, like Snowmerdinger, the name itself was correct/Snowermerdinger
         #Heimerdinger would be incorrect so I had to manually look over the spreadsheet.
-        workbook = xlsxwriter.Workbook('test2.xlsx')
+        workbook = xlsxwriter.Workbook('LeagueSkinsOutput.xlsx')
         sheet1 = workbook.add_worksheet("Blaze5545")
         sheet1.write(0, 0, "Champion")
         for x in range(1, len(champion_names_temp) + 1):
@@ -172,30 +170,49 @@ def main():
             for y in range(0, len(skins_list_temp[x-1])):
                 sheet1.write(x, y + 1, skins_list_temp[x-1][y])
         workbook.close()
-        #Creating my html files
-        #print(output_url_list)
-        #sorted(output_url_list, key=lambda x: x[1])
+        #Creating my html file
         out2 = open("league_skins.html", "w+")
-        out2.write("<!DOCTYPE html> \n")
-        out2.write("<html> \n")
+        out2.write("<!DOCTYPE html>\n")
+        out2.write("<html>\n")
+        out2.write("\t<head>\n")
         #Nav Bar
-        out2.write("""<head>
-<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css"> 
-</head> 
-<nav> 
-   <ul>
-      <li><a href="book_reviews.html">Book Reviews</a></li>
-      <li><a href="fitch.html"> Fitch </a></li>
-      <li><a href='games.html'>Games</a></li>
-      <li><a href='gre_vocab.html'>GRE Vocab</a></li>
-      <li><a href='index.html'>Index</a></li>
-      <li><a href="league_skins.html">League Skins</a></li>
-      <li><a href="music.html">Music</a></li>
-      <li><a href='photos.html'>Photos</a></li>
-      <li><a href='projects.html'>Projects</a></li>
-      <li><a href='volunteering.html'>Volunteering</a></li>
-    </ul>
-</nav> 
+        out2.write("""\t\t<meta charset="utf-8">\n""")
+        out2.write("""\t\t<meta http-equiv="X-UA-Compatible" content="IE=edge">\n""")
+        out2.write("""\t\t<meta name="viewport" content="width=device-width, initial-scale=1">\n""")
+        out2.write("""\t\t<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+\t\t<script src="javascripts/bootstrap.min.js"></script>
+\t\t<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+\t\t<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+\t</head>
+""")
+        out2.write("""\t<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Pages</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="book_reviews.html">Book Reviews</a></li>
+          <li><a href='games.html'>Games</a></li>
+          <li><a href='gre_vocab.html'>GRE Vocab</a></li>
+          <li><a href="league_skins.html">League Skins</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href='photos.html'>Photos</a></li>
+          <li><a href='projects.html'>Projects</a></li>
+          <li><a href='volunteering.html'>Volunteering</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+    <div class="starter-template"> 
 \n \n""")
         for x in range(0, len(output_url_list)):
             for z in range(0, len(output_url_list[x])):
@@ -204,8 +221,10 @@ def main():
                 else:
                     out2.write(output_url_list[x][z])
                 out2.write("\n")
-            out2.write("<br />")
-            out2.write("\n")
+            out2.write("<br />\n")
+        out2.write("</div>\n</div>\n")
         out2.write("</html>")
 if __name__ == "__main__":
+    print("Processing...")
     main()
+    print("league_skins.html generated")
