@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="stylesheets/nav_bar.css">
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" src="javascripts/fitch.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src="javascripts/bootstrap.min.js"></script>
+	    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+	    <link href="stylesheets/core.css" rel="stylesheet">
+	    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+	    <title>Fitch</title>
 	    <style>
 	    	p
 	    	{
@@ -23,20 +31,34 @@
 	    		font-size: 24pt;
 	    	}
 	    </style>
-	    <nav>
-		   <ul>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="#">Pages</a>
+		  </div>
+		  <div id="navbar" class="collapse navbar-collapse">
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="index.html">Home</a></li>
 		      <li><a href="book_reviews.html">Book Reviews</a></li>
-		      <li><a href="fitch.html"> Fitch </a></li>
 		      <li><a href='games.html'>Games</a></li>
 		      <li><a href='gre_vocab.html'>GRE Vocab</a></li>
-		      <li><a href='index.html'>Index</a></li>
-		      <li><a href="league_skins.html">League Skins</a></li>
-		      <li><a href="music.html">Music</a></li>
-		      <li><a href='photos.html'>Photos</a></li>
-		      <li><a href='projects.html'>Projects</a></li>
-		      <li><a href='volunteering.html'>Volunteering</a></li>
-		    </ul>	
-    	</nav>
+		    <li><a href="league_skins.html">League Skins</a></li>
+		    <li><a href="music.html">Music</a></li>
+		    <li><a href='photos.html'>Photos</a></li>
+		    <li><a href='projects.html'>Projects</a></li>
+		    <li><a href='volunteering.html'>Volunteering</a></li>
+		    </ul>
+		  </div>
+		</div>
+		</nav>
+    <div class="container">
+    <div class="starter-template">
 	</head>
 	<p>
 		Fitch is a formal logic system for proofs. To use this application input values for each part of the
@@ -197,5 +219,7 @@
 	    <input type="text" id="R1">
 	    <br />
 	    <button onclick="fitch_two()">Evaluate</button>
+	</div>
+	</div>
 	</div>
 </html>
