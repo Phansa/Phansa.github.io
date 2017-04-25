@@ -51,7 +51,7 @@ def main():
         #********************Start Program************************
         #Used in my getChampionData function. API Key has been commented out for security reasons.
         region = "na"
-        APIKey = "INSERT API KEY HERE"
+        APIKey = "INSERT KEY HERE"
         #Will store the skins I own read in from an excel worksheet
         skins_list = []
         champion_names = []
@@ -183,6 +183,7 @@ def main():
 \t\t<script src="javascripts/bootstrap.min.js"></script>
 \t\t<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 \t\t<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+\t\t<title>League Skins</title>
 \t</head>
 """)
         out2.write("""\t<nav class="navbar navbar-inverse navbar-fixed-top">
