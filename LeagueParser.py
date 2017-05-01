@@ -51,6 +51,7 @@ def main():
         #********************Start Program************************
         #Used in my getChampionData function. API Key has been commented out for security reasons.
         region = "na"
+        #Insert your own API Key below
         APIKey = "INSERT KEY HERE"
         #Will store the skins I own read in from an excel worksheet
         skins_list = []
