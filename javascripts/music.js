@@ -29,8 +29,11 @@ sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248047862&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/234235747&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229432516&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
-//TO ADD
-//sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/152774056&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233118879&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293679921&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/157953486&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
+//TO ADD - A.G. Cook Beuatiful. Find right images for it~
+//sources.push("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/152774056&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true");
 var song_titles = [];
 song_titles.push("(◕‿◕✿) Le Cur - Cutiecore (◕‿◕✿)");
 song_titles.push("(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ");
@@ -55,6 +58,10 @@ song_titles.push("( o˘◡˘o) ┌iii┐ Shadow Man (ft. Saba, Smino & Phoelix) 
 song_titles.push("⌒(o＾▽＾o)ノ	 Never Enough - Allie X ⌒(o＾▽＾o)ノ");
 song_titles.push("o(>ω<)o Where We Are - Unknown o(>ω<)o");
 song_titles.push("(*＾ω＾)人(＾ω＾*) Sad Machine - Porter Robinson (*＾ω＾)人(＾ω＾*)");
+song_titles.push("(´♡‿♡`) Flowers - Nicky Night Time (´♡‿♡`)	");
+song_titles.push("ヽ(￣ω￣(。。 )ゝ Setting Fires - The Chain Smokers ft Xlyo ヽ(￣ω￣(。。 )ゝ");
+song_titles.push("〜(＞＜)〜 Cyan Teen - Aamourocean	〜(＞＜)〜");
+//song_titles.push("(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )");
 function next()
 {
 	if(x < sources.length - 1)
@@ -467,28 +474,74 @@ function change()
 			document.getElementById("MainImage").src = "images/Music/DVA_Dream.jpg";
 		}
 	}
+	else if(x == 23)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			//Source - http://25.media.tumblr.com/a6e109f971102e8f4dd45a0f8ee3cb43/tumblr_mo568bl8ak1rmxhcfo1_400.png
+			document.getElementById("MainImage").src = "images/Music/Kawaii Bunny.png";
+		}
+		else if(temp == 2)
+		{
+			document.getElementById("MainImage").src = "https://media.tenor.co/images/3254d98bf26b162bb4960483402918e7/tenor.gif";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "https://media.tenor.co/images/e64d607c05d016d1066fa5b82137be21/tenor.gif";
+		}
+	}
+	else if(x == 24)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			//http://www.herocollector.com/uploads/media/wolverine-v-x-23.jpg
+			document.getElementById("MainImage").src = "images/Music/wolverine-v-x-23.jpg";
+		}
+		else if(temp == 2)
+		{
+			//http://www.chaostrophic.com/wp-content/uploads/2016/11/Lucille-and-Negan-Heres-Negan-The-Walking-Dead-700x350.jpg
+			document.getElementById("MainImage").src = "images/Music/Lucille Negan.jpg";
 
-	//IMAGES TO ADD
-	//Tiny Tina
-	//1 kawaii image
-	//Sombra Fan Art
-	//
-	//FEATURES TO ADD
-	//Autoplay Functionality
-	//Ability to search by song name
-	//Ability to serach by song index
-	//List all song names
-	//Backup songs in case they get taken down from soundcloud
-	//
-	//SONGS TO ADD
-	//1 PC Music Song (probably Hannah Diamond) - https://soundcloud.com/vroomvroomrecordings/paradise-2min-edit-charli-xcx-4416
-	//Hey You - https://soundcloud.com/indieshuffle/tyler-the-creator-toro-y-moi
-	//So Typical - https://soundcloud.com/see-you-swoon/sotypical
-	//Another Night - https://soundcloud.com/cooltweens/another-night
-	//I Love Me - https://soundcloud.com/internetparty/iloveme
-	//All That - https://soundcloud.com/coolteens/all-that
-	//After Midnight - https://soundcloud.com/norcalnxc/aft3r-midnight-kittynxc	
-	//There 4 u - https://soundcloud.com/kittynxc/there-4-u
-	//Tori No Uta - https://soundcloud.com/slugabed/tori-no-uta
-	//Beautiful - https://soundcloud.com/pcmus/beautiful
+		}
+		else
+		{
+			//Source - http://orig14.deviantart.net/e2a2/f/2012/135/6/f/talia_al_ghul_by_doubleleaf-d4ztnjb.jpg
+			document.getElementById("MainImage").src = "images/Music/Talia Batman.jpg";
+		}
+	}
+	else if(x == 25)
+	{
+		temp = Math.floor(Math.random() * 3);
+		if(temp == 1)
+		{
+			//Source - http://pre14.deviantart.net/fe2b/th/pre/i/2016/312/b/3/dva_and_sombra_by_ukayamasaru-danspam.jpg
+			document.getElementById("MainImage").src = "images/Music/Sombra DVA.jpg";
+		}
+		else if(temp == 2)
+		{
+			//Source - http://img09.deviantart.net/4f2a/i/2013/195/8/d/fanart_borderlands2_tiny_tina_and_flesh_stick_by_xar623-d6cyy8q.png
+			document.getElementById("MainImage").src = "images/Music/Tiny Tina2.png";
+		}
+		else
+		{
+			document.getElementById("MainImage").src = "http://www.gamingcapacity.com/wp-content/uploads/2013/07/Tiny-Tina-2.jpg";
+		}
+	}
 }
+//FEATURES TO ADD
+//Autoplay Functionality
+//Ability to search by song name
+//Ability to serach by song index
+//List all song names
+//Backup songs in case they get taken down from soundcloud
+//
+//SONGS TO ADD
+//Hey You - https://soundcloud.com/indieshuffle/tyler-the-creator-toro-y-moi
+//So Typical - https://soundcloud.com/see-you-swoon/sotypical
+//Another Night - https://soundcloud.com/cooltweens/another-night
+//I Love Me - https://soundcloud.com/internetparty/iloveme
+//All That - https://soundcloud.com/coolteens/all-that
+//There 4 u - https://soundcloud.com/kittynxc/there-4-u
+//Tori No Uta - https://soundcloud.com/slugabed/tori-no-uta
