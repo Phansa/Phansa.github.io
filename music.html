@@ -11,6 +11,7 @@
     	<script src="javascripts/bootstrap.min.js"></script>
     	<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
     	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    	<body onload="initialize()">
     	<title> Kawaii Radio </title>
 		<style>
 			div{
@@ -90,9 +91,9 @@
 		<br />
 		<br />
 		<div>
-			<img src="images/Music/djpon3.gif" id="MainImage">
+			<img id="MainImage" src="images/Music/default_image.png">
 			<!-- ALT display <iframe id="CurrentSong" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
-			<iframe id="CurrentSong" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/229577943&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			<iframe id="CurrentSong" width="100%" height="100" scrolling="no" frameborder="no"></iframe>
 		</div>
 		<div>
 				<button onclick="prev()">Prev</button>

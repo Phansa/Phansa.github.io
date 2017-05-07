@@ -62,6 +62,13 @@ song_titles.push("(´♡‿♡`) Flowers - Nicky Night Time (´♡‿♡`)	");
 song_titles.push("ヽ(￣ω￣(。。 )ゝ Setting Fires - The Chain Smokers ft Xlyo ヽ(￣ω￣(。。 )ゝ");
 song_titles.push("〜(＞＜)〜 Cyan Teen - Aamourocean	〜(＞＜)〜");
 //song_titles.push("(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )");
+function initialize()
+{
+	x = Math.floor(Math.random() * sources.length);
+	document.getElementById("CurrentSong").src = sources[x];
+	//document.getElementById("Song Title").innerText = song_titles[x];
+	change();
+}
 function next()
 {
 	if(x < sources.length - 1)
