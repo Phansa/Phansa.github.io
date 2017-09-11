@@ -114,7 +114,10 @@ sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	232957337&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-
+//Carly Rae Jepsen - Gimmie Love
+sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
+	219556231&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
+	show_user=true&amp;show_reposts=false&amp;visual=true');
 /*TO ADD - A.G. Cook Beuatiful. Find right images for it~
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 152774056&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
@@ -148,6 +151,7 @@ songTitles.push('(´♡‿♡`) Flowers - Nicky Night Time (´♡‿♡`)	');
 songTitles.push('ヽ(￣ω￣(。。 )ゝ Setting Fires - The Chain Smokers ft Xlyo ヽ(￣ω￣(。。 )ゝ');
 songTitles.push('〜(＞＜)〜 Cyan Teen - Aamourocean	〜(＞＜)〜');
 songTitles.push('♡( ◡‿◡ ) Hudson Mohawke - Very First Breath ft. Irfane ♡( ◡‿◡ )');
+songTitles.push('(/^-^(^ ^*)/ ♡ Carly Rae Jepsen - Gimmie Love (/^-^(^ ^*)/ ♡	');
 //songTitles.push('(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )');
 function initialize()
 {
@@ -176,6 +180,7 @@ function next()
 }
 function prev()
 {
+	console.log('SOURCES BEFORE ' + songTitles[x]);
 	if(x > 0)
 	{
 		x -= 1;
@@ -184,6 +189,7 @@ function prev()
 	{
 		x = sources.length - 1;
 	}
+	console.log('SOURCE AFTER ' + songTitles[x]);
 	changeSong(sources[x], songTitles[x]);
 }
 function random()
@@ -197,7 +203,24 @@ function random()
 	}
 	changeSong(sources[x], songTitles[x]);
 }
-
+//Taken from https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
+document.onkeydown = function(e) {
+	switch (e.keyCode)
+	{
+		case 37:
+			e.preventDefault();	
+			prev();
+			break;
+		case 39:
+			e.preventDefault();
+			next();
+			break;
+		case 82:
+			e.preventDefault();
+			random();
+			break;
+	}
+}
 function generateRandom(upperLimit)
 {
 	return Math.floor(Math.random() * upperLimit);
@@ -653,6 +676,23 @@ function changeImage()
 					*/
 					$('#MainImage').attr('src', 'images/Music/MomijiDance.gif');
 					break;	
+			}
+			break;
+		case 27:
+			switch(generateRandom(4))
+			{
+				case 0:
+					$('#MainImage').attr('src', 'images/Music/AbsentFriends.jpg');
+					break;
+				case 1:
+					$('#MainImage').attr('src', 'images/Music/PharahMercyPortrait.jpg');
+					break;
+				case 2:
+					$('#MainImage').attr('src', 'images/Music/DVAHeart.jpg');
+					break;
+				case 3:
+					$('#MainImage').attr('src', 'images/Music/TracerFionna.jpg');
+					break;
 			}
 			break;
 	}
