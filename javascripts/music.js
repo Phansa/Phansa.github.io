@@ -169,6 +169,7 @@ function initialize()
 function changeSong(source, title)
 {
 	$('#CurrentSong').attr('src', source);
+	widget1 = SC.Widget('CurrentSong');
 	widget1.bind(SC.Widget.Events.FINISH, function(player, data)
 	{
 		next();
