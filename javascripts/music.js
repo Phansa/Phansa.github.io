@@ -535,7 +535,7 @@ function changeImage()
 					$('#MainImage').attr('src','images/Music/DVAKawaii.jpg');
 					break;
 				case 1:
-					$('#MainImage').attr('src','images/Music/DVAKawaii2.jpg');
+					$('#MainImage').attr('src','images/Music/DVAKawaii2.jpeg');
 					break;
 			}
 			break;
