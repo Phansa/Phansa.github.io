@@ -6,6 +6,7 @@ overwaifu.net
 */
 var x = 0;
 var sources =[];
+var isPaused = false;
 //Acide - Jenn Ayache
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	229577943&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
@@ -165,6 +166,7 @@ function changeSong(source, title)
 	$('#CurrentSong').attr('src', source);
 	$('#SongTitle').text(title);
 	changeImage();
+	isPaused = false;
 }
 function next()
 {
@@ -203,10 +205,31 @@ function random()
 	}
 	changeSong(sources[x], songTitles[x]);
 }
+
+// Pauses or plays the song when space is pressed
+function pause()
+{
+	var widget1 = SC.Widget('CurrentSong');
+	if(isPaused)
+	{
+		widget1.play();
+		isPaused = false;
+	}
+	else
+	{
+		widget1.pause();
+		isPaused = true;
+	}
+}
+
 //Taken from https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
 document.onkeydown = function(e) {
 	switch (e.keyCode)
 	{
+		case 32:
+			e.preventDefault();
+			pause();
+			break;
 		case 37:
 			e.preventDefault();	
 			prev();
