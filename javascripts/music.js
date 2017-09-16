@@ -6,7 +6,7 @@ overwaifu.net
 */
 var x = 0;
 var sources =[];
-var isPaused = false;
+var widget1;
 //Acide - Jenn Ayache
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	229577943&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
@@ -154,20 +154,29 @@ songTitles.push('〜(＞＜)〜 Cyan Teen - Aamourocean	〜(＞＜)〜');
 songTitles.push('♡( ◡‿◡ ) Hudson Mohawke - Very First Breath ft. Irfane ♡( ◡‿◡ )');
 songTitles.push('(/^-^(^ ^*)/ ♡ Carly Rae Jepsen - Gimmie Love (/^-^(^ ^*)/ ♡	');
 //songTitles.push('(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )');
+
 function initialize()
 {
 	x = Math.floor(Math.random() * sources.length);
 	$('#CurrentSong').attr('src', sources[x]);
-	changeImage();
+	widget1 = SC.Widget('CurrentSong', changeImage());
+	widget1.bind(SC.Widget.Events.FINISH, function(player, data)
+		{
+			next();
+		});
 }
 
 function changeSong(source, title)
 {
 	$('#CurrentSong').attr('src', source);
-	$('#SongTitle').text(title);
+	widget1.bind(SC.Widget.Events.FINISH, function(player, data)
+	{
+		next();
+	});
 	changeImage();
-	isPaused = false;
+	$('#SongTitle').text(title);
 }
+
 function next()
 {
 	if(x < sources.length - 1)
@@ -179,10 +188,11 @@ function next()
 		x = 0;
 	}
 	changeSong(sources[x], songTitles[x]);
+
 }
+
 function prev()
 {
-	console.log('SOURCES BEFORE ' + songTitles[x]);
 	if(x > 0)
 	{
 		x -= 1;
@@ -191,9 +201,9 @@ function prev()
 	{
 		x = sources.length - 1;
 	}
-	console.log('SOURCE AFTER ' + songTitles[x]);
 	changeSong(sources[x], songTitles[x]);
 }
+
 function random()
 {
 	prev_x = x;
@@ -207,18 +217,15 @@ function random()
 }
 
 // Pauses or plays the song when space is pressed
-function pause()
+function pause(isPaused)
 {
-	var widget1 = SC.Widget('CurrentSong');
 	if(isPaused)
 	{
 		widget1.play();
-		isPaused = false;
 	}
 	else
 	{
 		widget1.pause();
-		isPaused = true;
 	}
 }
 
@@ -228,7 +235,7 @@ document.onkeydown = function(e) {
 	{
 		case 32:
 			e.preventDefault();
-			pause();
+			widget1.isPaused(pause);
 			break;
 		case 37:
 			e.preventDefault();	
@@ -248,7 +255,8 @@ function generateRandom(upperLimit)
 {
 	return Math.floor(Math.random() * upperLimit);
 }
-//Standard image properties - around 500 by 500
+
+//Standard image properties are around 500 by 500
 function changeImage()
 {
 	switch(x)
