@@ -155,9 +155,9 @@ songTitles.push('(*＾ω＾)人(＾ω＾*) Sad Machine - Porter Robinson (*＾ω
 songTitles.push('(´♡‿♡`) Flowers - Nicky Night Time (´♡‿♡`)	');
 songTitles.push('ヽ(￣ω￣(。。 )ゝ Setting Fires - The Chain Smokers ft Xlyo ヽ(￣ω￣(。。 )ゝ');
 songTitles.push('〜(＞＜)〜 Cyan Teen - Aamourocean	〜(＞＜)〜');
-songTitles.push('♡( ◡‿◡ ) Hudson Mohawke - Very First Breath ft. Irfane ♡( ◡‿◡ )');
-songTitles.push('(/^-^(^ ^*)/ ♡ Carly Rae Jepsen - Gimmie Love (/^-^(^ ^*)/ ♡	');
-songTitles.push('(๑˃ᴗ˂)ﻭ Slugabed - Another Chance 2k14 (๑˃ᴗ˂)ﻭ');
+songTitles.push('♡( ◡‿◡ ) Very First Breath - Hudson Mohawke ft. Irfane ♡( ◡‿◡ )');
+songTitles.push('(/^-^(^ ^*)/ ♡ Gimmie Love - Carly Rae Jepsen  (/^-^(^ ^*)/ ♡	');
+songTitles.push('(๑˃ᴗ˂)ﻭ Another Chance - Roger Sanchez (๑˃ᴗ˂)ﻭ');
 //songTitles.push('(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )');
 
 function initialize()
