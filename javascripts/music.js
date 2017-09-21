@@ -119,6 +119,10 @@ sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	219556231&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
+// Slugabed - Another Chance 2k14
+sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
+	135466533&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
+	show_user=true&amp;show_reposts=false&amp;visual=true');
 /*TO ADD - A.G. Cook Beuatiful. Find right images for it~
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 152774056&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
@@ -153,6 +157,7 @@ songTitles.push('ヽ(￣ω￣(。。 )ゝ Setting Fires - The Chain Smokers ft X
 songTitles.push('〜(＞＜)〜 Cyan Teen - Aamourocean	〜(＞＜)〜');
 songTitles.push('♡( ◡‿◡ ) Hudson Mohawke - Very First Breath ft. Irfane ♡( ◡‿◡ )');
 songTitles.push('(/^-^(^ ^*)/ ♡ Carly Rae Jepsen - Gimmie Love (/^-^(^ ^*)/ ♡	');
+songTitles.push('(๑˃ᴗ˂)ﻭ Slugabed - Another Chance 2k14 (๑˃ᴗ˂)ﻭ');
 //songTitles.push('(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )');
 
 function initialize()
@@ -161,9 +166,9 @@ function initialize()
 	$('#CurrentSong').attr('src', sources[x]);
 	widget1 = SC.Widget('CurrentSong', changeImage());
 	widget1.bind(SC.Widget.Events.FINISH, function(player, data)
-		{
-			next();
-		});
+	{
+		next();
+	});
 }
 
 function changeSong(source, title)
@@ -727,10 +732,23 @@ function changeImage()
 					break;
 			}
 			break;
+		case 28:
+			switch(generateRandom(3))
+			{
+				case 0:
+					$('#MainImage').attr('src', 'images/Music/WinterNeko.jpg');
+					break;
+				case 1:
+					$('#MainImage').attr('src', 'images/Music/PharahMercyPachimaru.jpg');
+					break;
+				case 2:
+					$('#MainImage').attr('src', 'images/Music/Plushies.jpg');
+					break;
+			}
+			break;
 	}
 }
 //FEATURES TO ADD
-//Autoplay Functionality
 //Ability to search by song name
 //Ability to serach by song index
 //List all song names
