@@ -134,7 +134,7 @@ songTitles.push('(´• ω •`)ﾉ	 All I Ask - Skrillex Ft. Penny (´• ω �
 songTitles.push('.･ﾟﾟ･(／ω＼)･ﾟﾟ･. Lost - Scavenger Hunt (Lenno Remix) .･ﾟﾟ･(／ω＼)･ﾟﾟ･.');
 songTitles.push('(=①ω①=) Cat Cafe - Yoshi & Komono (=①ω①=)');
 songTitles.push('♡＼(￣▽￣)／♡ Begin Again - Purity Ring ♡＼(￣▽￣)／♡');
-songTitles.push('╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ Waiting to Ignite - Goldroom ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ');
+songTitles.push('ଘ(੭ˊᵕˋ)੭* ੈ✩‧₊˚ Waiting to Ignite - Goldroom ଘ(੭ˊᵕˋ)੭* ੈ✩‧₊˚');
 songTitles.push('o( ❛ᴗ❛ )o Monday Night - Gregory Esayan (feat. Ai Takekawa) o( ❛ᴗ❛ )o');
 songTitles.push('٩(｡•́‿•̀｡)۶	We All Fall Down - A-Track ft. Jamie Lidell ٩(｡•́‿•̀｡)۶	');
 songTitles.push('(✿◕﹏◡)~★ Been You - Justin Bieber (✿◕﹏◡)~★');
