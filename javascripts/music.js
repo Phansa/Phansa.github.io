@@ -658,8 +658,8 @@ function changeImage()
 					$('#MainImage').attr('src','images/Music/wolverine-v-x-23.jpg');
 					break;
 				case 1:
-					/* Source - http://www.chaostrophic.com/wp-content/uploads/2016/11/
-					Lucille-and-Negan-Heres-Negan-The-Walking-Dead-700x350.jpg */
+					/* Source - http://2.bp.blogspot.com/-HfNts1pt7as/WYHpc35G6kI/AAAAAAA
+					AFds/zvKxpK4-k4UFu02KQ4L-GxeYymUOoXPdgCHMYCw/s1600/RCO011.jpg */
 					$('#MainImage').attr('src','images/Music/LucilleNegan.jpg');
 					break;
 				case 2:
@@ -704,8 +704,8 @@ function changeImage()
 					$('#MainImage').attr('src', 'images/Music/JinxZiggs.png');
 					break;
 				case 2:
-					/* Source - https://3.bp.blogspot.com/-NgdpwihfRVE/V-AWfWBy56I/AAAAAAAAUl
-					E/v3afFuQR104QDxtTpOolD-MaJ2peU-HDACEw/s1600/shatter.jpg */
+					/* Source - https://3.bp.blogspot.com/-NgdpwihfRVE/V-AWfWBy56I/
+					AAAAAAAAUlE/v3afFuQR104QDxtTpOolD-MaJ2peU-HDACEw/s1600/shatter.jpg */
 					$('#MainImage').attr('src', 'images/Music/Shatter.jpg');
 					break;
 				case 3:
