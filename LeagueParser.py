@@ -34,7 +34,7 @@ import os
 
 #Returns a JSON object containing data pertaining to all the champions in the game as well as their skin type
 def getChampionData(region, APIKey):
-    URL = "https://" + region + ".api.pvp.net/api/lol/static-data/" + region + "/v1.2/champion" + "?champData=skins&" + "api_key=" + APIKey
+    URL = "https://" + region + ".api.riotgames.com/lol/static-data/v3/champions?locale=en_US&tags=skins&dataById=false&api_key=" + APIKey
     response = requests.get(URL)
     return response.json()
 
@@ -52,8 +52,8 @@ def main():
         #print(responseJSON2[ID][0]['entries'][0]['leaguePoints'])
         #********************Start Program************************
         #Used in my getChampionData function. API Key has been commented out for security reasons.
-        region = "na"
-        APIKey = "APIKEY"
+        region = "na1"
+        APIKey = "API KEY"
         #Will store the skins I own read in from an excel worksheet
         skins_list = []
         champion_names = []
@@ -62,6 +62,7 @@ def main():
         skins_list_temp = [[]]
         #The base URL for every skin is this. This program will be searching for the rest of the
         #url to complete and making a HTML Document containing all the url links to the skins I currently own.
+        #skin_url = "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/"
         skin_url = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"
         output_url_list = [[]]
         #Reading in the excel file, removing all NaN/empty cell values and replacing them with empty string
@@ -72,7 +73,7 @@ def main():
         champ_name = ""
         count = 0
         for index, row in df.iterrows():
-            #Initialize my temporary skin list
+            #Intialzie my temporary skin list
             skins_list_temp_initialize = []
             skins_list_temp.append(skins_list_temp_initialize)
             for x in range (1,10):
@@ -122,15 +123,14 @@ def main():
             #Creates a directory to store this champions images
             if(not(os.path.isdir("images/LeagueOfLegends/" + champion_names[x]))):
                 os.makedirs("images/LeagueOfLegends/" + champion_names[x])
-            #output_url_list[index_to_insert].pop(0)
             output_url_list[index_to_insert].append("<img src=" + "images/LeagueOfLegends/" + champion_names[x] + "/default.jpg>")
-            #output_url_list.pop(0)
             for y in range(0, len(master_skin_list)):
                 for z in range(0, len(skins_list)):
                     #Creates a local copy of each skin image
                     source_image_link = skin_url + champion_names[x] + '_' + str(master_skin_list[y]['num']) + ".jpg"
                     image_path = "images/LeagueOfLegends/" + champion_names[x] + "/" + "".join(master_skin_list[y]['name'].split()) + ".jpg"
                     if(not(os.path.isfile(image_path))):
+                        print("Downloading " + source_image_link)
                         opened_image_link = ur.urlopen(source_image_link)
                         out_path = open(image_path,
                                                 "wb")
@@ -140,29 +140,7 @@ def main():
                     #my output_url list
                     if(skins_list[z] == master_skin_list[y]['name']):
                         output_url_list[index_to_insert].append("<img src=" + image_path + ">")
-                        #print(source_image_link)
-                        #output_url_list[index_to_insert].append("<img src=" + skin_url + champion_names[x] + '_' + str(master_skin_list[y]['num']) + ".jpg" + ">")
             bool_found = False
- 
-        
-        #My first idea was to write the Skin + Champion name to a textfile then manually edit the excel document with the
-        #updated names, however I realized I could use a similar method as what I was doing and just write directly to a new
-        #excel worksheet.
-        #out = open("names.txt", "w+")
-        #for x in range(0, len(champion_names_temp)):
-        #    for z in range(0, len(skins_list_temp[x])):
-        #        out.write(skins_list_temp[x][z] + " " + champion_names_temp[x])
-        #        skins_list_temp[x][z] = skins_list_temp[x][z] + " " + champion_names_temp[x]
-        #        out.write("\n")
-        #
-        #I was going to use a dataframe/pandas method but I decided to use xlsxwriter as I had used a similar method 
-        #when making my database applicaiton.
-        #d = {'Champion': champion_names_temp}
-        #df1 = pandas.DataFrame(columns = "Champion": champion_names_temp)
-        #writer = ExcelWriter('output.xlsx')
-        #df1.to_excel(writer,'Blaze5545')
-        #writer.save()
-
         #I had just written the first part of the skin names, for example for Goth Annie I just wrote goth, and for the
         #check above I needed the exact skin name so this function takes the first spreadsheet I made and appends the
         #champion name after it. Of course for some skins, like Snowmerdinger, the name itself was correct/Snowermerdinger
