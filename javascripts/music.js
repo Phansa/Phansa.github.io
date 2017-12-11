@@ -7,10 +7,11 @@ overwaifu.net
 var x = 0;
 var sources =[];
 var widget1;
-//Acide - Jenn Ayache
+//Forever - Danny L Harle
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
-	229577943&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
-	show_user=true&amp;show_reposts=false&amp;visual=true');
+	231736804&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
+	show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;\
+	visual=true');
 //Wasted - Lofts
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	232534809&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
@@ -123,12 +124,12 @@ sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	135466533&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-/*TO ADD - A.G. Cook Beuatiful. Find right images for it~
+/*TO ADD - A.G. Cook Beautiful. Find right images for it~
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 152774056&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 show_user=true&amp;show_reposts=false&amp;visual=true'); */
 var songTitles = [];
-songTitles.push('(◕‿◕✿) Acide - Jenn Ayache  (◕‿◕✿)');
+songTitles.push('(◕‿◕✿) Forever - Danny L Harle  (◕‿◕✿)');
 songTitles.push('(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ');
 songTitles.push('(´• ω •`)ﾉ	 All I Ask - Skrillex Ft. Penny (´• ω •`)ﾉ	');
 songTitles.push('.･ﾟﾟ･(／ω＼)･ﾟﾟ･. Lost - Scavenger Hunt (Lenno Remix) .･ﾟﾟ･(／ω＼)･ﾟﾟ･.');
