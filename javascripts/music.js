@@ -124,10 +124,9 @@ sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	135466533&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-/*TO ADD - A.G. Cook Beautiful. Find right images for it~
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 152774056&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
-show_user=true&amp;show_reposts=false&amp;visual=true'); */
+show_user=true&amp;show_reposts=false&amp;visual=true');
 var songTitles = [];
 songTitles.push('(◕‿◕✿) Forever - Danny L Harle  (◕‿◕✿)');
 songTitles.push('(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ');
@@ -159,7 +158,7 @@ songTitles.push('〜(＞＜)〜 Cyan Teen - Aamourocean	〜(＞＜)〜');
 songTitles.push('♡( ◡‿◡ ) Very First Breath - Hudson Mohawke ft. Irfane ♡( ◡‿◡ )');
 songTitles.push('(/^-^(^ ^*)/ ♡ Gimmie Love - Carly Rae Jepsen  (/^-^(^ ^*)/ ♡	');
 songTitles.push('(๑˃ᴗ˂)ﻭ Another Chance - Roger Sanchez (๑˃ᴗ˂)ﻭ');
-//songTitles.push('(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )');
+songTitles.push('(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )');
 
 function initialize()
 {
@@ -744,6 +743,20 @@ function changeImage()
 					break;
 				case 2:
 					$('#MainImage').attr('src', 'images/Music/Plushies.jpg');
+					break;
+			}
+			break;
+		case 29:
+			switch(generateRandom(3))
+			{
+				case 0:
+					$('#MainImage').attr('src', 'images/Music/HappyFrog.jpg');
+					break;
+				case 1:
+					$('#MainImage').attr('src', 'images/Music/HiPotion.jpg');
+					break;
+				case 2:
+					$('#MainImage').attr('src', 'images/Music/Doodle.jpg');
 					break;
 			}
 			break;
