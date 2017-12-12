@@ -274,7 +274,7 @@ function changeImage()
 					$('#MainImage').attr('src', 'images/Music/HappyFrog.JPG');
 					break;
 				case 1:
-					$('#MainImage').attr('src', 'images/Music/HiPotion.jpg');
+					$('#MainImage').attr('src', 'images/Music/HiPotion.JPG');
 					break;
 				case 2:
 					$('#MainImage').attr('src', 'images/Music/Doodle.jpg');
