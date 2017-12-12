@@ -268,15 +268,16 @@ function changeImage()
 	switch(x)
 	{
 		case 0:
-			switch(generateRandom(2))
+			switch(generateRandom(3))
 			{
 				case 0:
-					$('#MainImage').attr('src', 'images/Music/Djpon3.gif');	
+					$('#MainImage').attr('src', 'images/Music/HappyFrog.JPG');
 					break;
 				case 1:
-					/* Source - https://thepowerzone.files.wordpress.com/2013/01/before-
-					watchmen-minutemen-1.jpg */
-					$('#MainImage').attr('src','images/Music/Watchmen_Start.jpg');
+					$('#MainImage').attr('src', 'images/Music/HiPotion.jpg');
+					break;
+				case 2:
+					$('#MainImage').attr('src', 'images/Music/Doodle.jpg');
 					break;
 			}
 			break;
@@ -747,16 +748,15 @@ function changeImage()
 			}
 			break;
 		case 29:
-			switch(generateRandom(3))
+			switch(generateRandom(2))
 			{
 				case 0:
-					$('#MainImage').attr('src', 'images/Music/HappyFrog.jpg');
+					$('#MainImage').attr('src', 'images/Music/Djpon3.gif');	
 					break;
 				case 1:
-					$('#MainImage').attr('src', 'images/Music/HiPotion.jpg');
-					break;
-				case 2:
-					$('#MainImage').attr('src', 'images/Music/Doodle.jpg');
+					/* Source - https://thepowerzone.files.wordpress.com/2013/01/before-
+					watchmen-minutemen-1.jpg */
+					$('#MainImage').attr('src','images/Music/Watchmen_Start.jpg');
 					break;
 			}
 			break;
