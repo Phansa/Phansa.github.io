@@ -124,9 +124,14 @@ sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	135466533&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
+// Beautiful - A.G. Cook
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 152774056&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 show_user=true&amp;show_reposts=false&amp;visual=true');
+// Cutiecore - 2 B Alive
+sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
+	287518765&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
+	show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true');
 var songTitles = [];
 songTitles.push('(◕‿◕✿) Forever - Danny L Harle  (◕‿◕✿)');
 songTitles.push('(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ');
@@ -159,6 +164,7 @@ songTitles.push('♡( ◡‿◡ ) Very First Breath - Hudson Mohawke ft. Irfane 
 songTitles.push('(/^-^(^ ^*)/ ♡ Gimmie Love - Carly Rae Jepsen  (/^-^(^ ^*)/ ♡	');
 songTitles.push('(๑˃ᴗ˂)ﻭ Another Chance - Roger Sanchez (๑˃ᴗ˂)ﻭ');
 songTitles.push('(っ˘ω˘ς ) Beautiful - A.G. Cook (っ˘ω˘ς )');
+songTitles.push('(~˘▽˘)~ Puppet - To Be Alive (ft. Aaron Richards) ~(˘▽˘~)');
 
 function initialize()
 {
@@ -760,6 +766,24 @@ function changeImage()
 					break;
 			}
 			break;
+		case 30:
+			switch(generateRandom(3))
+			{
+				case 0:
+					$('#MainImage').attr('src', 'images/Music/aiohabn.jpg');
+					break;	
+				case 1:
+					/* Source - https://pa1.narvii.com/6464/c39154f39e542a4f03cf37398
+					d93ad45a8c19fe7_hq.gif */
+					$('#MainImage').attr('src', 'images/Music/Kanna.gif');	
+					break;
+
+				case 2:
+					/* Source - https://78.media.tumblr.com/24e83a53973e8c2823ccb95b4cd8
+					7683/tumblr_o9745taQ9u1vufqdfo1_500.gif */
+					$('#MainImage').attr('src', 'images/Music/luluco.gif');	
+					break;
+			}
 	}
 }
 //FEATURES TO ADD
