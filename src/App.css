@@ -7,6 +7,17 @@
   height: 80px;
 }
 
+.div {
+  vertical-align: center;
+}
+.section{
+  padding-left: 100px;
+}
+
+.img{
+  vertical-align: middle;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;
