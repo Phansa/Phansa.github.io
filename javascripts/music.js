@@ -7,128 +7,128 @@ overwaifu.net
 var x = 0;
 var sources =[];
 var widget1;
-//Forever - Danny L Harle
+// 0: Forever - Danny L Harle
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	231736804&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;\
 	visual=true');
-//Wasted - Lofts
+// 1: Wasted - Lofts
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	232534809&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//All I Ask - Skrillex Ft. Penny
+// 2: All I Ask - Skrillex Ft. Penny
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	229175825&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Lost - Scavenger Hunt (Lenno Remix)
+// 3: Into You - Ariana Grande
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
-	197702891&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
+287029769&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Cat Cafe - Yoshi & Komono
+// 4: Cat Cafe - Yoshi & Komono
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	182847897&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Begin Again - Purity Ring
+// 5: Jukai - Jhené Aiko
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
-	195103737&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
+	353927345&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Waiting to Ignite - Goldroom
+// 6: Waiting to Ignite - Goldroom
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	230222227&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Monday Night - Gregory Esayan (feat. Ai Takekawa)
+// 7: Monday Night - Gregory Esayan (feat. Ai Takekawa)
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	210503956&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//We All Fall Down - A-Track ft. Jamie Lidell
+// 8: We All Fall Down - A-Track ft. Jamie Lidell
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	234739832&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Been You - Justin Bieber
+// 9: Been You - Justin Bieber
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	233798320&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Everything Is Embarassing - Sky Ferreira
+// 10: Everything Is Embarassing - Sky Ferreira
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	217970408&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Wait - Tom Swoon, Paris & Simo
+// 11: Wait - Tom Swoon, Paris & Simo
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	233098110&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Lush Life - Zara Larsson
+// 12: Lush Life - Zara Larsson
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	219805532&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Fill Me In - Craig David
+// 13: Meiko - Leave The Lights On
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
-	232439344&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
+	264169500&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Boyfriend - Justin Bieber
+// 14: TeddyLoid ft Bonjour Suzuki - Pipo Password
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
-	134066335&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
+	270907154&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//All That - Carly Rae Jepsen
+// 15: All That - Carly Rae Jepsen
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	209714540&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//n33d u - kyubae
+// 16: n33d u - kyubae
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	233998222&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Miniskirt - AOA
+// 17: Miniskirt - AOA
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	209600622&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Can't Live Without You - Owl City
+// 18: You Look So Good - Moe Shop
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
-	214682233&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
+	231061898&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Shadow Man (ft. Saba, Smino & Phoelix) - Noname
+// 19: Crossroad - Au5
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
-	276247586&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
+	285469662&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Never Enough - Allie X
+// 20: Never Enough - Allie X
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	248047862&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Where We Are - Unknown
+// 21: Where We Are - Unknown
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	234235747&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Sad Machine - Porter Robinson
+// 22: Sad Machine - Porter Robinson
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	229432516&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false');
-//Flowers - Nicky Night Time
+// 23: Flowers - Nicky Night Time
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	233118879&amp;auto_play=true&amp;hide_related=false&amp;\
 	show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true');
-//Setting Fires - The Chain Smokers ft Xlyo
+// 24: Setting Fires - The Chain Smokers ft Xlyo
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	293679921&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Cyan Teen - Aamourocean
+// 25: Cyan Teen - Aamourocean
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	157953486&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Hudson Mohawke - Very First Breath ft. Irfane
+// 26: Hudson Mohawke - Very First Breath ft. Irfane
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	232957337&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-//Carly Rae Jepsen - Gimmie Love
+// 27: Carly Rae Jepsen - Gimmie Love
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	219556231&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-// Slugabed - Another Chance 2k14
+// 28: Slugabed - Another Chance 2k14
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	135466533&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;visual=true');
-// Beautiful - A.G. Cook
+// 29: Beautiful - A.G. Cook
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 152774056&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 show_user=true&amp;show_reposts=false&amp;visual=true');
-// Cutiecore - 2 B Alive
+// 30: Cutiecore - 2 B Alive
 sources.push('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/\
 	287518765&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;\
 	show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true');
@@ -136,9 +136,9 @@ var songTitles = [];
 songTitles.push('(◕‿◕✿) Forever - Danny L Harle  (◕‿◕✿)');
 songTitles.push('(づ ◕‿◕ )づ Wasted - Lofts (づ ◕‿◕ )づ');
 songTitles.push('(´• ω •`)ﾉ	 All I Ask - Skrillex Ft. Penny (´• ω •`)ﾉ	');
-songTitles.push('.･ﾟﾟ･(／ω＼)･ﾟﾟ･. Lost - Scavenger Hunt (Lenno Remix) .･ﾟﾟ･(／ω＼)･ﾟﾟ･.');
+songTitles.push('.･ﾟﾟ･(／ω＼)･ﾟﾟ･. Into You - Ariana Grande .･ﾟﾟ･(／ω＼)･ﾟﾟ･.');
 songTitles.push('(=①ω①=) Cat Cafe - Yoshi & Komono (=①ω①=)');
-songTitles.push('♡＼(￣▽￣)／♡ Begin Again - Purity Ring ♡＼(￣▽￣)／♡');
+songTitles.push('♡＼(￣▽￣)／♡ Jukai - Jhené Aiko ♡＼(￣▽￣)／♡');
 songTitles.push('ଘ(੭ˊᵕˋ)੭* ੈ✩‧₊˚ Waiting to Ignite - Goldroom ଘ(੭ˊᵕˋ)੭* ੈ✩‧₊˚');
 songTitles.push('o( ❛ᴗ❛ )o Monday Night - Gregory Esayan (feat. Ai Takekawa) o( ❛ᴗ❛ )o');
 songTitles.push('٩(｡•́‿•̀｡)۶	We All Fall Down - A-Track ft. Jamie Lidell ٩(｡•́‿•̀｡)۶	');
@@ -146,14 +146,13 @@ songTitles.push('(✿◕﹏◡)~★ Been You - Justin Bieber (✿◕﹏◡)~★'
 songTitles.push('(^=◕ᴥ◕=^) Everything Is Embarassing - Sky Ferreira (^=◕ᴥ◕=^)');
 songTitles.push('(⊃｡•́‿•̀｡)⊃	Wait - Tom Swoon, Paris & Simo (⊃｡•́‿•̀｡)⊃');
 songTitles.push('(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄) Lush Life - Zara Larsson(⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)');
-songTitles.push('(/^-^(^ ^*)/ ♡ Fill Me In - Craig David (/^-^(^ ^*)/ ♡');
-songTitles.push('( ◡‿◡ *)	Boyfriend - Justin Bieber ( ◡‿◡ *)');
+songTitles.push('(/^-^(^ ^*)/ ♡ Leave The Lights On - Meiko (/^-^(^ ^*)/ ♡');
+songTitles.push('( ◡‿◡ *) Pipo Password - TeddyLoid ft Bonjour Suzuki ( ◡‿◡ *)');
 songTitles.push('( o˘◡˘o) ┌iii┐ All That - Carly Rae Jepsen ( o˘◡˘o) ┌iii┐');
 songTitles.push('☆ﾐ(o*･ω･)ﾉ n33d u - kyubae ☆ﾐ(o*･ω･)ﾉ');
 songTitles.push('(→_→)	Miniskirt - AOA (←_←)');
-songTitles.push('ヽ(o´∀`)ﾉ♪♬ Can\'t Live Without You - Owl City ヽ(o´∀`)ﾉ♪♬');
-songTitles.push('( o˘◡˘o) ┌iii┐ Shadow Man (ft. Saba, Smino & Phoelix) - Noname ( o˘◡˘o) \
-	┌iii┐');
+songTitles.push('ヽ(o´∀`)ﾉ♪♬ You Look So Good - Moe Shop ヽ(o´∀`)ﾉ♪♬');
+songTitles.push('( o˘◡˘o) ┌iii┐ Crossroad - Au5 ( o˘◡˘o)┌iii┐');
 songTitles.push('⌒(o＾▽＾o)ノ Never Enough - Allie X ⌒(o＾▽＾o)ノ');
 songTitles.push('o(>ω<)o Where We Are - Unknown o(>ω<)o');
 songTitles.push('(*＾ω＾)人(＾ω＾*) Sad Machine - Porter Robinson (*＾ω＾)人(＾ω＾*)');
@@ -791,12 +790,3 @@ function changeImage()
 //Ability to serach by song index
 //List all song names
 //Backup songs in case they get taken down from soundcloud
-//
-//SONGS TO ADD
-//Hey You - https://soundcloud.com/indieshuffle/tyler-the-creator-toro-y-moi
-//So Typical - https://soundcloud.com/see-you-swoon/sotypical
-//Another Night - https://soundcloud.com/cooltweens/another-night
-//I Love Me - https://soundcloud.com/internetparty/iloveme
-//All That - https://soundcloud.com/coolteens/all-that
-//There 4 u - https://soundcloud.com/kittynxc/there-4-u
-//Tori No Uta - https://soundcloud.com/slugabed/tori-no-uta
