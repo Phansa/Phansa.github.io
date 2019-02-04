@@ -314,14 +314,12 @@ function changeImage()
 			switch(generateRandom(2))
 			{
 				case 0:
-					/* Source - http://dazedimg.dazedgroup.netdna-cdn.com/640/azure/
-					dazed-prod/1160/4/1164711.jpg*/
-					$('#MainImage').attr('src','images/Music/YungLean.jpg');
+					/* Source - https://i.redd.it/9cj5nqky7z311.png*/
+					$('#MainImage').attr('src','images/Music/MakoRyuko.png');
 					break;
 				case 1:
-					/* Source - http://overwaifu.net/upload/8cbc3bee40b5221ad3fcb1d70f673
-					c39.jpg */
-					$('#MainImage').attr('src','images/Music/WholeHug.jpg');
+					/* Source - https://i.imgur.com/DdzaNdl.jpg */
+					$('#MainImage').attr('src','images/Music/MakoRyuko2.jpg');
 					break;
 			}
 			break;
