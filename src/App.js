@@ -4,23 +4,10 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import Home from './Home.js';
+import Home from './Components/Home.js';
+import LeagueSkins from './Components/LeagueSkins.js';
+import Photos from './Components/Photos.js';
 import './core.css';
-const LeagueSkins = () => (
-  <div>
-    <h1>
-      Work in Progress
-    </h1>
-  </div>
-)
-
-const Photos = ({ match }) => (
-  <div>
-    <h1>
-      Work in Progress
-    </h1>
-  </div>
-)
 
 const NavBar = () =>
 (
