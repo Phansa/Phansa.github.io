@@ -7,7 +7,6 @@ import {
 import Home from './Components/Home.js';
 import LeagueSkins from './Components/LeagueSkins.js';
 import Photos from './Components/Photos.js';
-import './core.css';
 
 const NavBar = () =>
 (
