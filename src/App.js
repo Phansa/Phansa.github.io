@@ -7,6 +7,7 @@ import {
 import Home from './Components/Home.js';
 import LeagueSkins from './Components/LeagueSkins.js';
 import Photos from './Components/Photos.js';
+import Achievements from './Components/Achievements.js';
 
 const NavBar = () =>
 (
@@ -19,6 +20,7 @@ const NavBar = () =>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/leagueSkins">League Skins</Link></li>
         <li><Link to="/photos">Photos</Link></li>
+        <li><Link to="/achievements">Achievements</Link></li>
       </ul>
     </div>
   </div>
@@ -35,6 +37,7 @@ const App = () => (
       <Route exact path="/" component={Home}/>
       <Route path="/leagueSkins" component={LeagueSkins}/>
       <Route path="/photos" component={Photos}/>
+      <Route path="/achievements" component={Achievements}/>
     </div>
   </Router>
 )
